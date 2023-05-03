@@ -1,0 +1,8 @@
+BUFF_KEY_RESET:   entity work.buffer_3_state_1porta
+        port map(entrada => Debounce_BuffRSTFPGA, habilita =>  Habilita_KEY_RST, saida => KEYRST_SAIDA);	
+
+BUFF_KEY0:   entity work.buffer_3_state_1porta
+        port map(entrada => Debounce_BuffKEY0, habilita =>  Habilita_KEY0, saida => KEY0_SAIDA);	
+
+BUFF_KEY1:   entity work.buffer_3_state_1porta
+        port map(entrada => Debounce_BuffKEY1, habilita =>  Habilita_KEY1, saida => KEY1_SAIDA);	

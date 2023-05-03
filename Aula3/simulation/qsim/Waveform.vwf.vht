@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "02/15/2023 14:20:28"
+-- Generated on "03/06/2023 13:05:54"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula3
 -- 
@@ -64,7 +64,7 @@ t_prcs_KEY_0: PROCESS
 BEGIN
 	KEY(0) <= '1';
 	WAIT FOR 20000 ps;
-	FOR i IN 1 TO 24
+	FOR i IN 1 TO 7
 	LOOP
 		KEY(0) <= '0';
 		WAIT FOR 20000 ps;
@@ -86,6 +86,10 @@ END PROCESS t_prcs_SW_9;
 t_prcs_SW_8: PROCESS
 BEGIN
 	SW(8) <= '0';
+	WAIT FOR 160000 ps;
+	SW(8) <= '1';
+	WAIT FOR 40000 ps;
+	SW(8) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_8;
 
@@ -93,6 +97,8 @@ END PROCESS t_prcs_SW_8;
 t_prcs_SW_7: PROCESS
 BEGIN
 	SW(7) <= '1';
+	WAIT FOR 160000 ps;
+	SW(7) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_7;
 
@@ -100,34 +106,8 @@ END PROCESS t_prcs_SW_7;
 t_prcs_SW_6: PROCESS
 BEGIN
 	SW(6) <= '1';
+	WAIT FOR 160000 ps;
+	SW(6) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_6;
-
--- SW[3]
-t_prcs_SW_3: PROCESS
-BEGIN
-	SW(3) <= '0';
-WAIT;
-END PROCESS t_prcs_SW_3;
-
--- SW[2]
-t_prcs_SW_2: PROCESS
-BEGIN
-	SW(2) <= '0';
-WAIT;
-END PROCESS t_prcs_SW_2;
-
--- SW[1]
-t_prcs_SW_1: PROCESS
-BEGIN
-	SW(1) <= '0';
-WAIT;
-END PROCESS t_prcs_SW_1;
-
--- SW[0]
-t_prcs_SW_0: PROCESS
-BEGIN
-	SW(0) <= '0';
-WAIT;
-END PROCESS t_prcs_SW_0;
 END Aula3_arch;

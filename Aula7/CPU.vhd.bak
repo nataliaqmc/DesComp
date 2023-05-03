@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Aula7 is
+  -- Total de bits das entradas e saidas
+  generic ( larguraDados : natural := 13;
+        larguraEnderecos : natural := 9;
+		  larguraInstru : natural :=8;
+		  larguraSelecao : natural :=2;
+		  larguraROM : natural :=4;
+        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+  );
+  port   (
+    CLOCK_50 : in std_logic;
+    KEY: in std_logic_vector(3 downto 0);
+    PC_OUT: out std_logic_vector(larguraEnderecos-1 downto 0);
+	 PALAVRA_CONTROLE : out std_logic_vector(11 downto 0)
+  );
+end entity;
+
+
+architecture arquitetura of Aula5_2 is
+
+  signal ROM_Address : std_logic_vector(8 downto 0);
+  signal Instruction_IN : std_logic_vector(12 downto 0);
+  signal Data_Address : std_logic_vector(8 downto 0);
+  signal Data_OUT : std_logic_vector(7 downto 0);
+  signal Data_IN : std_logic_vector(7 downto 0);
+  signal Control : std_logic_vector(3 downto 0);
+  
+
+begin
+
+-- Para simular, fica mais simples tirar o edgeDetector
+gravar:  if simulacao generate
+CLK <= KEY(0);
+else generate
+detectorSub0: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+end generate;
+
+-- Port Map completo da memória ROM:
+ROM1 : entity work.memoriaROM   generic map (dataWidth => larguraDados, addrWidth => larguraEnderecos)
+          port map (Endereco => Endereco, Dado => instrucoes);
+			 
+
+
+end architecture;

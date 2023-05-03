@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "02/15/2023 11:49:24"
+-- Generated on "02/15/2023 16:51:47"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Aula2
 -- 
@@ -62,13 +62,17 @@ BEGIN
 -- KEY[0]
 t_prcs_KEY_0: PROCESS
 BEGIN
-LOOP
-	KEY(0) <= '0';
-	WAIT FOR 20000 ps;
 	KEY(0) <= '1';
 	WAIT FOR 20000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+	FOR i IN 1 TO 8
+	LOOP
+		KEY(0) <= '0';
+		WAIT FOR 20000 ps;
+		KEY(0) <= '1';
+		WAIT FOR 20000 ps;
+	END LOOP;
+	KEY(0) <= '0';
+WAIT;
 END PROCESS t_prcs_KEY_0;
 
 -- SW[9]
@@ -82,6 +86,8 @@ END PROCESS t_prcs_SW_9;
 t_prcs_SW_8: PROCESS
 BEGIN
 	SW(8) <= '0';
+	WAIT FOR 180000 ps;
+	SW(8) <= '1';
 WAIT;
 END PROCESS t_prcs_SW_8;
 
@@ -89,14 +95,21 @@ END PROCESS t_prcs_SW_8;
 t_prcs_SW_7: PROCESS
 BEGIN
 	SW(7) <= '1';
+	WAIT FOR 180000 ps;
+	SW(7) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_7;
 
 -- SW[6]
 t_prcs_SW_6: PROCESS
 BEGIN
+LOOP
 	SW(6) <= '1';
-WAIT;
+	WAIT FOR 180000 ps;
+	SW(6) <= '0';
+	WAIT FOR 180000 ps;
+	IF (NOW >= 360000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_SW_6;
 
 -- SW[3]
@@ -110,6 +123,8 @@ END PROCESS t_prcs_SW_3;
 t_prcs_SW_2: PROCESS
 BEGIN
 	SW(2) <= '0';
+	WAIT FOR 180000 ps;
+	SW(2) <= '1';
 WAIT;
 END PROCESS t_prcs_SW_2;
 
@@ -117,34 +132,20 @@ END PROCESS t_prcs_SW_2;
 t_prcs_SW_1: PROCESS
 BEGIN
 	SW(1) <= '1';
+	WAIT FOR 180000 ps;
+	SW(1) <= '0';
 WAIT;
 END PROCESS t_prcs_SW_1;
 
 -- SW[0]
 t_prcs_SW_0: PROCESS
 BEGIN
+LOOP
 	SW(0) <= '1';
-WAIT;
+	WAIT FOR 180000 ps;
+	SW(0) <= '0';
+	WAIT FOR 180000 ps;
+	IF (NOW >= 360000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_SW_0;
-
--- KEY[3]
-t_prcs_KEY_3: PROCESS
-BEGIN
-	KEY(3) <= '0';
-WAIT;
-END PROCESS t_prcs_KEY_3;
-
--- KEY[2]
-t_prcs_KEY_2: PROCESS
-BEGIN
-	KEY(2) <= '0';
-WAIT;
-END PROCESS t_prcs_KEY_2;
-
--- KEY[1]
-t_prcs_KEY_1: PROCESS
-BEGIN
-	KEY(1) <= '0';
-WAIT;
-END PROCESS t_prcs_KEY_1;
 END Aula2_arch;

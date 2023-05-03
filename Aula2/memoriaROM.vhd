@@ -26,7 +26,7 @@ architecture assincrona of memoriaROM is
         tmp(1)  := "1101";
         tmp(2)  := "1101";
         tmp(3)  := "1101";
-        tmp(4)  := "1101";
+        tmp(4)  := "1100";
         tmp(5)  := "0000";
         tmp(6)  := "0000";
         tmp(7)  := "0000";

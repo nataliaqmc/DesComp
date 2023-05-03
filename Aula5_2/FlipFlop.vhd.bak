@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
+
+entity FlipFlop is
+    port (
+      Flag:     in STD_LOGIC;
+      JEQ:      in STD_LOGIC;
+		JMP:      in STD_LOGIC;
+      saida:    out STD_LOGIC
+    );
+end entity;
+
+architecture comportamento of FlipFlop is
+    begin
+      saida <= '0' when (Jmp = '0' and Jeq = '0') else
+					'1';
+		
+end architecture;
