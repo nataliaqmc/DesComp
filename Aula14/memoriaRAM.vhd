@@ -8,7 +8,8 @@ entity memoriaRAM is
          addrWidth: natural := 6
     );
     port
-    (   rd : in std_logic;
+    (  
+		  rd : in std_logic;
 		  wr : in std_logic;
 		  Data_Address : in std_logic_vector(addrWidth-1 downto 0);
         Data_OUT : in std_logic_vector(dataWidth -1 downto 0);

@@ -1,0 +1,47 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
+
+entity ULA is
+    generic ( larguraDados : natural := 4 );
+    port (
+			 Rs, Rt:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+			 op:  in STD_LOGIC_VECTOR(2 downto 0);
+			 saidaULA:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0)
+		
+    );
+end entity;
+
+architecture comportamento of ULA is
+   signal soma : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+   signal sub  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal andi : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal ori: std_logic_vector((larguraDados-1)downto 0);
+	signal slt: std_logic_vector((larguraDados-1)downto 0);
+	
+    begin
+      soma      <= STD_LOGIC_VECTOR(unsigned(Rs) + unsigned(Rt));
+      subtracao <= STD_LOGIC_VECTOR(unsigned(Rs) - unsigned(Rt));
+		andi <= (Rs(7) and Rt(7)) 
+				& (Rs(6) and Rt(6)) 
+				& (Rs(5) and Rt(5)) 
+				& (Rs(4) and Rt(4)) 
+				& (Rs(3) and Rt(3)) 
+				& (Rs(2) and Rt(2)) 
+				& (Rs(1) and Rt(1)) 
+				& (Rs(0) and Rt(0));
+		ori  <= (Rs(7) or Rt(7)) 
+				& (Rs(6) or Rt(6)) 
+				& (Rs(5) or Rt(5)) 
+				& (Rs(4) or Rt(4)) 
+				& (Rs(3) or Rt(3)) 
+				& (Rs(2) or Rt(2)) 
+				& (Rs(1) or Rt(1)) 
+				& (Rs(0) or Rt(0));
+      		
+      saida <= soma when (op = "001") else 
+					sub  when(seletor = "010") else
+					andi when (seletor = "011") else
+					ori;
+		
+end architecture;

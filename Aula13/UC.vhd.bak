@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity UC is
+  -- Total de bits das entradas e saidas
+  port (
+			dado: in std_logic_vector(31 downto 0);
+			saida: out std_logic_vector(7 downto 0);
+	 
+  );
+  
+end entity;
+
+
+architecture arquitetura of UC is
+
+	constant add  : std_logic_vector(2 downto 0) := "001";
+	constant sub  : std_logic_vector(2 downto 0) := "010";
+	constant slt  : std_logic_vector(2 downto 0) := "101";
+	
+begin
+	saida <= "10001100" when opcode = add else
+				"01010100" when opcode = sub else
+				"01100100" when opcode = slt else
+				"00000000";
+
+end architecture;

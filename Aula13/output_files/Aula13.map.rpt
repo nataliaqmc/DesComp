@@ -1,0 +1,509 @@
+Analysis & Synthesis report for Aula13
+Wed May 03 17:24:46 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |Aula13
+ 10. Parameter Settings for User Entity Instance: divisorGenerico:divisor
+ 11. Parameter Settings for User Entity Instance: registradorGenerico:PC
+ 12. Parameter Settings for User Entity Instance: memoriaROM:ROM
+ 13. Parameter Settings for User Entity Instance: bancoReg:BancoReg
+ 14. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
+ 15. Parameter Settings for User Entity Instance: ULA:ULA
+ 16. Port Connectivity Checks: "ULA:ULA"
+ 17. Port Connectivity Checks: "UC:UC"
+ 18. Port Connectivity Checks: "memoriaROM:ROM"
+ 19. Port Connectivity Checks: "registradorGenerico:PC"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed May 03 17:24:46 2023       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; Aula13                                      ;
+; Top-level Entity Name           ; Aula13                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 26                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; Aula13             ; Aula13             ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/memoriaROM.vhd          ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/somaConstante.vhd       ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/registradorGenerico.vhd ;         ;
+; Aula13.vhd                       ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/Aula13.vhd              ;         ;
+; bancoReg.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/bancoReg.vhd            ;         ;
+; UC.vhd                           ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/UC.vhd                  ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/divisorGenerico.vhd     ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Aula13/ULA.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimate of Logic utilization (ALMs needed) ; 0        ;
+;                                             ;          ;
+; Combinational ALUT usage for logic          ; 0        ;
+;     -- 7 input functions                    ; 0        ;
+;     -- 6 input functions                    ; 0        ;
+;     -- 5 input functions                    ; 0        ;
+;     -- 4 input functions                    ; 0        ;
+;     -- <=3 input functions                  ; 0        ;
+;                                             ;          ;
+; Dedicated logic registers                   ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 26       ;
+;                                             ;          ;
+; Total DSP Blocks                            ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; CLOCK_50 ;
+; Maximum fan-out                             ; 1        ;
+; Total fan-out                               ; 26       ;
+; Average fan-out                             ; 0.50     ;
++---------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |Aula13                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 26   ; 0            ; |Aula13             ; Aula13      ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Aula13 ;
++------------------+-------+---------------------------------------------+
+; Parameter Name   ; Value ; Type                                        ;
++------------------+-------+---------------------------------------------+
+; larguraDados     ; 8     ; Signed Integer                              ;
+; larguraEnderecos ; 8     ; Signed Integer                              ;
+; simulacao        ; false ; Enumerated                                  ;
++------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico:divisor ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; divisor        ; 50000 ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:PC ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memoriaROM:ROM ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; datawidth      ; 32    ; Signed Integer                     ;
+; addrwidth      ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoReg:BancoReg ;
++---------------------+-------+----------------------------------+
+; Parameter Name      ; Value ; Type                             ;
++---------------------+-------+----------------------------------+
+; larguradados        ; 32    ; Signed Integer                   ;
+; larguraendbancoregs ; 5     ; Signed Integer                   ;
++---------------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somaConstante:incrementaPC ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                 ;
+; constante      ; 1     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; larguradados   ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA"                                                                                ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; flagzero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UC:UC"                                                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; saida[7..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; saida[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memoriaROM:ROM"                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; dado[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; dado[10..6]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico:PC" ;
++--------+-------+----------+------------------------+
+; Port   ; Type  ; Severity ; Details                ;
++--------+-------+----------+------------------------+
+; enable ; Input ; Info     ; Stuck at VCC           ;
+; rst    ; Input ; Info     ; Stuck at GND           ;
++--------+-------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 26                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed May 03 17:24:36 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Aula13 -c Aula13
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/DesComp/DesComp/Aula13/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/DesComp/DesComp/Aula13/memoriaROM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/DesComp/DesComp/Aula13/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/DesComp/DesComp/Aula13/memoriaRAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ulasomasubvhd.vhd
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/DesComp/DesComp/Aula13/ULASomaSubvhd.vhd Line: 16
+    Info (12023): Found entity 1: ULASomaSub File: C:/DesComp/DesComp/Aula13/ULASomaSubvhd.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesComp/Aula13/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesComp/Aula13/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesComp/Aula13/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesComp/Aula13/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file registradorbooleano.vhd
+    Info (12022): Found design unit 1: registradorBooleano-comportamento File: C:/DesComp/DesComp/Aula13/registradorBooleano.vhd Line: 15
+    Info (12023): Found entity 1: registradorBooleano File: C:/DesComp/DesComp/Aula13/registradorBooleano.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decoderinstru.vhd
+    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/DesComp/DesComp/Aula13/decoderInstru.vhd Line: 10
+    Info (12023): Found entity 1: decoderInstru File: C:/DesComp/DesComp/Aula13/decoderInstru.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decoder3x8.vhdl
+    Info (12022): Found design unit 1: decoder3x8-comportamento File: C:/DesComp/DesComp/Aula13/decoder3x8.vhdl Line: 10
+    Info (12023): Found entity 1: decoder3x8 File: C:/DesComp/DesComp/Aula13/decoder3x8.vhdl Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file debouncemem.vhd
+    Info (12022): Found design unit 1: debounceMem-comportamento File: C:/DesComp/DesComp/Aula13/debounceMem.vhd Line: 12
+    Info (12023): Found entity 1: debounceMem File: C:/DesComp/DesComp/Aula13/debounceMem.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_8portas.vhd
+    Info (12022): Found design unit 1: buffer_3_state_8_portas-comportamento File: C:/DesComp/DesComp/Aula13/buffer_3_state_8portas.vhd Line: 11
+    Info (12023): Found entity 1: buffer_3_state_8_portas File: C:/DesComp/DesComp/Aula13/buffer_3_state_8portas.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_1porta.vhd
+    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: C:/DesComp/DesComp/Aula13/buffer_3_state_1porta.vhd Line: 12
+    Info (12023): Found entity 1: buffer_3_state_1porta File: C:/DesComp/DesComp/Aula13/buffer_3_state_1porta.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file aula13.vhd
+    Info (12022): Found design unit 1: Aula13-arquitetura File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 22
+    Info (12023): Found entity 1: Aula13 File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoreg.vhd
+    Info (12022): Found design unit 1: bancoReg-comportamento File: C:/DesComp/DesComp/Aula13/bancoReg.vhd Line: 30
+    Info (12023): Found entity 1: bancoReg File: C:/DesComp/DesComp/Aula13/bancoReg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/DesComp/DesComp/Aula13/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: C:/DesComp/DesComp/Aula13/RAMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/DesComp/DesComp/Aula13/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: C:/DesComp/DesComp/Aula13/ROMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file uc.vhd
+    Info (12022): Found design unit 1: UC-arquitetura File: C:/DesComp/DesComp/Aula13/UC.vhd Line: 15
+    Info (12023): Found entity 1: UC File: C:/DesComp/DesComp/Aula13/UC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/DesComp/DesComp/Aula13/divisorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: divisorGenerico File: C:/DesComp/DesComp/Aula13/divisorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/DesComp/DesComp/Aula13/ULA.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: C:/DesComp/DesComp/Aula13/ULA.vhd Line: 5
+Info (12127): Elaborating entity "Aula13" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at Aula13.vhd(14): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(26): object "opcode" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 26
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(30): object "shamt" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(43): object "controleR1" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 43
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(44): object "controleR2" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 44
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(47): object "leituraMem" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 47
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(48): object "escritaMem" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 48
+Warning (10036): Verilog HDL or VHDL warning at Aula13.vhd(50): object "flag" assigned a value but never read File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 50
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico:divisor" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 59
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 67
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 71
+Warning (10639): VHDL warning at memoriaROM.vhd(18): constant value overflow File: C:/DesComp/DesComp/Aula13/memoriaROM.vhd Line: 18
+Warning (10445): VHDL Subtype or Type Declaration warning at memoriaROM.vhd(18): subtype or type has null range File: C:/DesComp/DesComp/Aula13/memoriaROM.vhd Line: 18
+Warning (10542): VHDL Variable Declaration warning at memoriaROM.vhd(21): used initial value expression for variable "tmp" because variable was never assigned a value File: C:/DesComp/DesComp/Aula13/memoriaROM.vhd Line: 21
+Info (12128): Elaborating entity "UC" for hierarchy "UC:UC" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 75
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BancoReg" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 78
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 87
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 91
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 14
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 11
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 12
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 12
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 12
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 12
+    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/DesComp/DesComp/Aula13/Aula13.vhd Line: 15
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 10 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Wed May 03 17:24:46 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:11
+
+
