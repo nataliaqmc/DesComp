@@ -1,0 +1,32 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions
+-- and other software and tools, and its AMPP partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Intel Program License
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+WIDTH=32;
+DEPTH=64;
+ADDRESS_RADIX=DEC;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+--endereco : dado;
+    0    :   AD090001;  --sw t1, 0x0001 (t0) -> Armazena o conteudo de t1 (A) na posicao 1 da memoria (conteudo de t0 (0) + imediato)
+    1    :   8D0A0001;  --lw t2, 0x0001 (t0) -> Carrega o conteudo na posicao 1 da memoria (conteudo de t0 (0) + imediato) em t2 
+    2    :   112B0001;  --beq t1, t3, 0x0004 -> Compara se t1 = t3 e pula para 2 + 1 + 1 se for. Como não é, não deve fazer nada
+    3    :   112A0001;  --beq t1, t2, 0x0001 -> compara se t1 = t2 e pula para 3 + 1 + 1 se for. Como é, pula a prox instrucao
+    4    :   014B4820;  --add t1, t2, t3     -> Não deve ser executado devido beq anterior
+    5    :   012B5820;  --add t3, t1, t3     -> Soma t1 com t3 e armazena em t3
+    6    :   016C5822;  --sub t3, t3, t4     -> Subtrai t3 por t4 e armazena em t3
+    7    :   08000006;  --j   0x0006         -> Pula para a instrução 6
+    [8..63] :   00000000; 
+
+END;
