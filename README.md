@@ -15,10 +15,11 @@
   - Aula 12: assembly do MIPS DLX
   - [Aula 13: decomposição de instruções do tipo R](Aula13)
   - [Aula 14: decomposição de instruções do tipo I](Aula14)
-  - Aula 15: decomposição de instruções do tipo J
+  - [Aula 15: decomposição de instruções do tipo J](Aula15)
   - Aula 16: projetar a ULA para o MIPS DLX
   - Aula 17: unidade de controle da ULA e do fluxo de dados
   - Aula 18: pipeline para o MIPS
   - Aula 19: pipeline hazards (estruturaiis e dados)
   - Aula 20: pipeline control hazards
   - [Projeto 1: relógio utilizando processador personalizado](Projeto1) 
+  - [Projeto 2: Processador compatível com MIPS DLX](Projeto2) 
