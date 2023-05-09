@@ -65,11 +65,11 @@ tmp(42) := JEQ & '0' & x"4E";	-- JEQ .INCREMENTA 	#Se for igual pula para fpga_r
 tmp(43) := LDA & '1' & x"FA";	-- LDA .RST_FPGA 	#Carrega acumulador com o valor de FPGA_RESET
 tmp(44) := ANDI & '0' & x"01";	-- ANDI $1 	#Faz a operação AND com o valor 1
 tmp(45) := CEQ & '0' & x"01";	-- CEQ @1 	#Compara se o valor do acumulador é igual a 0 
-tmp(46) := JEQ & '0' & x"00";	-- JEQ .SETUP 	#Se  n foi pressionado pulta para atualiza display
+tmp(46) := JEQ & '0' & x"X1";	-- JEQ .SETUP 	#Se  n foi pressionado pulta para atualiza display
 
 --ATUALIZA DISPLAY
 tmp(47) := JSR & '0' & x"A9";	-- JSR .ATUALIZA_DISPLAY 	#Chama a subrotina atualiza display
-tmp(48) := JMP & '0' & x"27";	-- JMP .LOOP 	#Volta para o loop principal
+tmp(48) := JMP & '0' & x"26";	-- JMP .LOOP 	#Volta para o loop principal
 
 --loop INCREMENTO
 --INCREMENTA:
@@ -80,7 +80,7 @@ tmp(51) := SOMA & '0' & x"01";	-- SOMA @1 	#Soma 1 ao valor das unidades
 tmp(52) := CEQ & '0' & x"03";	-- CEQ @3 	#Compara com valor 10
 tmp(53) := JEQ & '0' & x"5B";	-- JEQ .INCREMENTO_DEZENA 	#Se for igual 10 pula para o endereço incrementar dezena(definir ainda)
 tmp(54) := STA & '0' & x"0A";	-- STA @10 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(55) := JMP & '0' & x"2B";	-- JMP .BACK 	#VOLTA PRO loop PRINCIPAL
+tmp(55) := JMP & '0' & x"2A";	-- JMP .BACK 	#VOLTA PRO loop PRINCIPAL
 --INCREMENTO_DEZENA:
 tmp(56) := LDI & '0' & x"00";	-- LDI $0 	#Carrega acumulador com valor 0
 tmp(57) := STA & '0' & x"0A";	-- STA @10 	#Salva o valor 0 em MEM[10]
@@ -90,7 +90,7 @@ tmp(60) := SOMA & '0' & x"01";	-- SOMA @1 	#Soma 1 ao valor da dezenas
 tmp(61) := CEQ & '0' & x"03";	-- CEQ @3 	#Compara o valor com 10
 tmp(62) := JEQ & '0' & x"69";	-- JEQ .INCREMENTO_CENTENA 	#Se for igual a 10 pula para incremento centena(DEFINIR AINDA)
 tmp(63) := STA & '0' & x"0B";	-- STA @11 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(64) := JMP & '0' & x"2B";	-- JMP .BACK 	#return
+tmp(64) := JMP & '0' & x"2A";	-- JMP .BACK 	#return
 --INCREMENTO_CENTENA:
 tmp(65) := LDI & '0' & x"00";	-- LDI $0 	#Carrega acumulador com valor 0
 tmp(66) := STA & '0' & x"0B";	-- STA @11 	#Salva o valor 0 em MEM[11]
@@ -100,7 +100,7 @@ tmp(69) := SOMA & '0' & x"01";	-- SOMA @1
 tmp(70) := CEQ & '0' & x"03";	-- CEQ @3 	#Compara o valor com 10
 tmp(71) := JEQ & '0' & x"77";	-- JEQ .INCREMENTO_MILHAR 	#Se for igual a 10 pula para incremento milhar(DEFINIR AINDA)
 tmp(72) := STA & '0' & x"0C";	-- STA @12 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(73) := JMP & '0' & x"2B";	-- JMP .BACK
+tmp(73) := JMP & '0' & x"2A";	-- JMP .BACK
 --INCREMENTO_MILHAR:
 tmp(74) := LDI & '0' & x"00";	-- LDI $0 	#Carrega acumulador com valor 0
 tmp(75) := STA & '0' & x"0C";	-- STA @12 	#Salva o valor 0 em MEM[12]
@@ -110,7 +110,7 @@ tmp(78) := SOMA & '0' & x"01";	-- SOMA @1 	#Soma 1 ao valor da milhar
 tmp(79) := CEQ & '0' & x"0D";	-- CEQ @13 	#Compara o valor com 10
 tmp(80) := JEQ & '0' & x"85";	-- JEQ .INCREMENTO_DEZENA_MILHAR 	#Se for igual a 10 pula para incremento dezena milhar(DEFINIR AINDA)
 tmp(81) := STA & '0' & x"0D";	-- STA @13 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(82) := JMP & '0' & x"2B";	-- JMP .BACK
+tmp(82) := JMP & '0' & x"2A";	-- JMP .BACK
 --INCREMENTO_DEZENA_MILHAR:
 tmp(83) := LDI & '0' & x"00";	-- LDI $0 	#Carrega acumulador com valor 0
 tmp(84) := STA & '0' & x"0D";	-- STA @13 	#Salva o valor 0 em MEM[12]
@@ -120,7 +120,7 @@ tmp(87) := SOMA & '0' & x"01";	-- SOMA @1
 tmp(88) := CEQ & '0' & x"03";	-- CEQ @3 	#Compara o valor com 10
 tmp(89) := JEQ & '0' & x"93";	-- JEQ .INCREMENTO_CENTENA_MILHAR 	#Se for igual a 10 pula para incremento centena milhar(DEFINIR AINDA)
 tmp(90) := STA & '0' & x"0E";	-- STA @14 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(91) := JMP & '0' & x"2B";	-- JMP .BACK
+tmp(91) := JMP & '0' & x"2A";	-- JMP .BACK
 --INCREMENTO_CENTENA_MILHAR:
 tmp(92) := LDI & '0' & x"00";	-- LDI $0 	#Carrega acumulador com valor 0
 tmp(93) := STA & '0' & x"0E";	-- STA @14 	#Salva o valor 0 em MEM[12]
@@ -130,7 +130,7 @@ tmp(96) := SOMA & '0' & x"01";	-- SOMA @1
 tmp(97) := CEQ & '0' & x"03";	-- CEQ @3 	#Compara o valor com 10
 tmp(98) := JEQ & '0' & x"A1";	-- JEQ .LED_OVERFLOW 	#PULA PARA LED OVERFL0W (DEFINIR AINDA)
 tmp(99) := STA & '0' & x"0F";	-- STA @15 	#Salva o valor do acumulador em MEM[10](unidades)
-tmp(100) := JMP & '0' & x"2B";	-- JMP .BACK
+tmp(100) := JMP & '0' & x"2A";	-- JMP .BACK
 --LED_OVERFLOW:
 tmp(101) := LDA & '0' & x"01";	-- LDA @1 	#Carrega acumulador com 1
 tmp(102) := STA & '0' & x"10";	-- STA @16 	#Salva o valor do acumulador na mem[6]

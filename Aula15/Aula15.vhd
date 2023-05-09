@@ -13,12 +13,12 @@ entity Aula15 is
     PC: out std_logic_vector(larguraEnderecos-1 downto 0);
 	 KEY: in std_logic_vector(3 downto 0);
 	 
-	 EntradaA_ULA : out std_logic_vector (larguraDados-1 downto 0);
-	 EntradaB_ULA : out std_logic_vector (larguraDados-1 downto 0);
-	 Saida_ULA_leitura	 : out std_logic_vector (larguraDados-1 downto 0);
-	 LeituraFlagEQ : out std_logic;
-	 EscritaRAM : out std_logic_vector (larguraDados-1 downto 0);
-	 LeituraRAM : out std_logic_vector (larguraDados-1 downto 0)
+	 ULA_A_in : out std_logic_vector (larguraDados-1 downto 0);
+	 ULA_B_in : out std_logic_vector (larguraDados-1 downto 0);
+	 ULA_out	 : out std_logic_vector (larguraDados-1 downto 0);
+	 Flag_ULA : out std_logic;
+	 Escrita_RAM : out std_logic_vector (larguraDados-1 downto 0);
+	 Leitura_RAM : out std_logic_vector (larguraDados-1 downto 0)
   );
 end entity;
 
@@ -28,58 +28,61 @@ architecture arquitetura of Aula15 is
 	signal CLK : std_logic;
 	
 	-- Program Counter (PC):
-	signal PC_IN: std_logic_vector(31 downto 0);
-	signal PC_OUT: std_logic_vector(31 downto 0);
-	signal saidaIncrementaPC : std_logic_vector (31 downto 0);
-	signal proxPC : std_logic_vector (31 downto 0);
+	signal PC_IN: std_logic_vector(31 downto 0);                 -- Entrada do PC
+	signal PC_OUT: std_logic_vector(31 downto 0);                -- Saída do PC
+	signal saidaIncrementaPC : std_logic_vector (31 downto 0);   -- Saída do contador do PC
 	
 	-- ROM:
-	signal EnderecoROM : std_logic_vector (31 downto 0);
-	signal dadoROM : std_logic_vector(31 downto 0);
+	signal EnderecoROM : std_logic_vector (31 downto 0);         -- Entrada da ROM
+	signal dadoROM : std_logic_vector(31 downto 0);              -- Saída da ROM
 	
 	-- Banco de Registradores:
-	signal Rs: std_logic_vector(4 downto 0);
-	signal Rt: std_logic_vector(4 downto 0);
-	signal Rd: std_logic_vector(4 downto 0);
-	signal Rs_out: std_logic_vector(31 downto 0);
-	signal Rt_out: std_logic_vector(31 downto 0);
+	signal Rs: std_logic_vector(4 downto 0);							 -- Instrução(25 ~ 21)
+	signal Rt: std_logic_vector(4 downto 0);							 -- Instrução(20 ~ 16)
+	signal Rd: std_logic_vector(4 downto 0);							 -- Instrução(15 ~ 11)
+	signal Rs_out: std_logic_vector(31 downto 0);                -- Saída banco de registradores 1 (Rs)
+	signal Rt_out: std_logic_vector(31 downto 0);                -- Saída banco de registradores 2 (Rt)
 	
 	-- ULA:
-	signal ULA_A: std_logic_vector(31 downto 0);
-	signal ULA_B: std_logic_vector(31 downto 0);
-	signal Saida_ULA : std_logic_vector (31 downto 0);
-	signal flagULA : std_logic;
+	signal ULA_A: std_logic_vector(31 downto 0);                 -- Entrada A da ULA
+	signal ULA_B: std_logic_vector(31 downto 0);                 -- Entrada B da ULA
+	signal Saida_ULA : std_logic_vector (31 downto 0);           -- Saída da ULA
+	signal flagULA : std_logic;											 -- Flag de igual da ULA
 	
 	-- Estende sinal:
-	signal imediato: std_logic_vector(15 downto 0);
-	signal saidaExtensor : std_logic_vector (31 downto 0);
+	signal imediato: std_logic_vector(15 downto 0);              -- Entrada do extensor de sinais (instru(15~0))
+	signal saidaExtensor : std_logic_vector (31 downto 0);       -- Saida do extensor de sinais
 	
 	-- Unidade de controle (UC):
-	signal opCode : std_logic_vector (5 downto 0);
-	signal funct : std_logic_vector (5 downto 0);
-	signal destino: std_logic_vector (25 downto 0);
-	signal habMUX_RtRd: std_logic;
-	signal habEscritaReg: std_logic;
-	signal habMUX_RtIm: std_logic;
-	signal ctrlULA: std_logic_vector(3 downto 0);
-	signal habMUX_ULA: std_logic;
-	signal BEQ: std_logic;
-	signal habLeituraMem: std_logic;
-	signal habEscritaMem: std_logic; 
-	signal controle: std_logic_vector(11 downto 0);
-	signal Flag_BEQ: std_logic;
+	signal opCode : std_logic_vector (5 downto 0);               -- Instru(31 ~ 26)
+	signal funct : std_logic_vector (5 downto 0);                -- Instru(5 ~ 0)
+	signal destino: std_logic_vector (25 downto 0);              -- Instru(31 ~ 26)
+	signal habMUX_RtRd: std_logic;                               -- Habilita Rt ou Rd do Mux
+	signal habEscritaReg: std_logic;                             -- Habilita a escrita no registrador
+	signal habMUX_RtIm: std_logic;                               -- Habilita Rt ou Imediato do Mux
+	signal operacaoULA: std_logic_vector(2 downto 0);            -- Operacao da ULA
+	signal habMUX_ULA: std_logic;                                -- Habilita ULA ou Dado RAM do Mux
+	signal BEQ: std_logic;                                       -- Habilita Jump if Equal
+	signal habLeituraMem: std_logic;                             -- Habilita a leitura na memória RAM
+	signal habEscritaMem: std_logic;                             -- Habilita a escrita na memória RAM
+	signal controle: std_logic_vector(11 downto 0);              -- Controle de saída da Unidade de Controle
+	signal Flag_BEQ: std_logic;                                  -- Operação AND da flag da ULA e do habilita jump
+	signal Flag_PC: std_logic;                                   -- Habilita o Program Counter
+	signal tipoR: std_logic;                                     -- Informa se a operação é do tipo R ou não
 		
 	--RAM:
-	signal saidaRAM :  std_logic_vector (31 downto 0);
-	signal saidaShifter :  std_logic_vector (31 downto 0);
-	signal saidaSomador : std_logic_vector (31 downto 0);
-	signal enderecoJ : std_logic_vector (31 downto 0);
+	signal saidaRAM :  std_logic_vector (31 downto 0);           -- Saída da memória RAM
+	signal saidaShifter :  std_logic_vector (31 downto 0);       -- Saída do shifter (<<2)
+	signal saidaSomador : std_logic_vector (31 downto 0);        -- Saída do somador de PC_OUT + Shifter
+	signal enderecoJ : std_logic_vector (31 downto 0);           -- Endereço do Jump
 
 	-- Saida dos MUXs:
-	signal mux_RtRd_out : std_logic_vector (4 downto 0);
-	signal mux_RtIm_out : std_logic_vector (31 downto 0);
-	signal mux_ULA_out  : std_logic_vector (31 downto 0);
-	signal mux_ImPC_out : std_logic_vector (31 downto 0);
+	signal mux_RtRd_out : std_logic_vector (4 downto 0);         -- Saída do Mux Rt e Rd
+	signal mux_RtIm_out : std_logic_vector (31 downto 0);			 -- Saída do Mux Rt e Imediato
+	signal mux_ULA_out  : std_logic_vector (31 downto 0);        -- Saída do Mux Imediato e ULA
+	signal mux_ImPC_out : std_logic_vector (31 downto 0);        -- Saída do Mux Imediato e PC
+	signal proxPC : std_logic_vector (31 downto 0);              -- Saída do Mux do PC
+	
 
   
 begin
@@ -141,9 +144,9 @@ MUX_PC : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 						  entradaB_MUX => saidaSomador,
 						  seletor_MUX => Flag_BEQ,
 						  saida_MUX => mux_ImPC_out);
-MUX_PC_BEQ_JMP : entity work.muxGenerico2x1 generic map (larguraDados => 32)
+MUX_JMP : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => mux_ImPC_out,
-						  entradaB_MUX => enderecoJ, 
+						  entradaB_MUX => saidaShifter, 
 						  seletor_MUX => Flag_BEQ, 
 						  saida_MUX => proxPC);
 	
@@ -163,16 +166,15 @@ ULA : entity work.ULA  generic map(larguraDados => larguraDados)
           port map (entradaA => Rs_out,
 						  entradaB => mux_RtIm_out,
 						  saida => Saida_ULA, 
-						  flagEQ => flagULA,
-						  seletor => ctrlULA);
+						  flag => flagULA,
+						  seletor => operacaoULA);
 
 							
 -- Unidade de Controle do Fluxo de dados:			 
 UC : entity work.UC  
           port map (opCode => opCode,
 						  funct => funct,
-						  saida => controle);
-			 
+						  saida => controle);			 
 -- Estende o imediato:			 
 EXTENSOR_SINAL : entity work.estendeSinalGenerico generic map(larguraDadoEntrada => 16, larguraDadoSaida => 32)
 			 port map (estendeSinal_IN => imediato,
@@ -211,14 +213,16 @@ funct    <= dadoROM (5 downto 0);
 destino  <= dadoROM (25 downto 0);
  
 -- Saída da unidade de controle:
+Flag_PC       <= controle(11);
 habMUX_RtRd   <= controle(10);
-habEscritaReg     <= controle(9);
-habMUX_RtIm <= controle(8);
-ctrlULA  		<= controle(7 downto 4);
-habMUX_ULA <= controle(3);
-BEQ       <= controle(2);
-habLeituraMem		<= controle(1);
-habEscritaMem<= controle(0);
+habEscritaReg <= controle(9);
+habMUX_RtIm   <= controle(8);
+operacaoULA   <= controle(7 downto 5);
+tipoR         <= controle(4);
+habMUX_ULA    <= controle(3);
+BEQ           <= controle(2);
+habLeituraMem <= controle(1);
+habEscritaMem <= controle(0);
 
 -- Definindo o "AND":
 Flag_BEQ <= BEQ and flagULA;
@@ -226,12 +230,12 @@ enderecoJ <= saidaIncrementaPC(31 downto 28) & destino & "00";
 EnderecoROM <= PC_OUT;				
 PC <= EnderecoROM;
 
-Saida_ULA_leitura	<=Saida_ULA;
-
-EntradaA_ULA <= Rs_out;
-EntradaB_ULA <= mux_RtIm_out;
-EscritaRAM <= Rt_out;
-LeituraRAM <= saidaRAM;
-LeituraFlagEQ <= flagULA;
+-- Dados de saída: 
+ULA_A_in <= Rs_out;
+ULA_B_in <= mux_RtIm_out;
+ULA_out	<=Saida_ULA;
+Escrita_RAM <= Rt_out;
+Leitura_RAM <= saidaRAM;
+Flag_ULA <= flagULA;
 
 end architecture;

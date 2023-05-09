@@ -106,7 +106,7 @@ begin
 --else generate
 
 divisor : entity work.divisorGenerico
-            generic map (divisor => 50000)   -- divide por 10.
+            generic map (divisor => 2500000)   -- divide por 10.
             port map (clk => CLOCK_50, saida_clk => saida_CLK);
 CLK <= saida_CLK;  
 --end generate;

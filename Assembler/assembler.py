@@ -234,7 +234,7 @@ with open(destinoBIN, "w") as f:  #Abre o destino BIN
             elif ':' in instrucaoLine:
                 bit8 = '0'
                 cont-=1
-                labels[instrucaoLine.replace(":","")] = cont+1
+                labels[instrucaoLine.replace(":","")] = cont
             elif '.' in instrucaoLine:
                 instrucaoLine, bit8 = convertePonto(instrucaoLine)
             else: #Senão, se a instrução nao possuir nenhum imediator, ou seja, nao conter '@' ou '$'
