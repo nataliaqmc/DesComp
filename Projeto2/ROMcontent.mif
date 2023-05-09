@@ -18,15 +18,24 @@ ADDRESS_RADIX=DEC;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
---endereco : dado;
-    0    :   AD090001;  --sw t1, 0x0001 (t0) -> Armazena o conteudo de t1 (A) na posicao 1 da memoria (conteudo de t0 (0) + imediato)
-    1    :   8D0A0001;  --lw t2, 0x0001 (t0) -> Carrega o conteudo na posicao 1 da memoria (conteudo de t0 (0) + imediato) em t2 
-    2    :   112B0001;  --beq t1, t3, 0x0004 -> Compara se t1 = t3 e pula para 2 + 1 + 1 se for. Como não é, não deve fazer nada
-    3    :   112A0001;  --beq t1, t2, 0x0001 -> compara se t1 = t2 e pula para 3 + 1 + 1 se for. Como é, pula a prox instrucao
-    4    :   014B4820;  --add t1, t2, t3     -> Não deve ser executado devido beq anterior
-    5    :   012B5820;  --add t3, t1, t3     -> Soma t1 com t3 e armazena em t3
-    6    :   016C5822;  --sub t3, t3, t4     -> Subtrai t3 por t4 e armazena em t3
-    7    :   08000006;  --j   0x0006         -> Pula para a instrução 6
-    [8..63] :   00000000; 
+      -- Valores iniciais no banco de registradores:
+      -- $t0   (#8) := 0x00
+      -- $t1   (#9) := 0x0A
+      -- $t2  (#10) := 0x0B
+      -- $t3  (#11) := 0x0C
+      -- $t4  (#12) := 0x0D
+      -- $t5  (#13) := 0x16
 
+    0    :   AC090008; --sw $t1 8($zero)     (m(8) := 0x0000000A)
+    1    :   8C080008; --lw $t0 8($zero)     ($t0  := 0x0000000A)
+    2    :   012A4022; --sub $t0 $t1 $t2     ($t0  := 0xFFFFFFFF)
+    3    :   012A4024; --and $t0 $t1 $t2     ($t0  := 0x0000000A)
+    4    :   012A4025; --or $t0 $t1 $t2      ($t0  := 0x0000000B)
+    5    :   012A402A; --slt $t0 $t1 $t2     ($t0  := 0x00000001)
+    6    :   010A4020; --add $t0 $t0 $t2     ($t0  := 0x0000000C)
+                       --segunda execução:   ($t0 := 0x00000017)
+    7    :   110BFFFE; --beq $t0 $t3 0xFFFE  (pc := #6)
+                       --segunda execução:   (pc := #8)
+    8    :   08000000; --j 0x000000          (pc := #0)
+   [9..63]  : 00000000;
 END;
