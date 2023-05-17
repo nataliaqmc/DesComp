@@ -19,36 +19,32 @@ end entity;
 architecture comportamento of ULA is
   --constant zero : std_logic_vector(larguraDados-1 downto 0) := (others => '0');
 
-   signal soma :      STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal subtracao : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal op_and :    STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal op_or :     STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   signal op_nor :    STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-   --signal op_not :    STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-	
-	--signal sub_result: STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-	signal slt    :    STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-
-    begin
-      soma      <= STD_LOGIC_VECTOR(signed(entradaA) + signed(entradaB));
-      subtracao <= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
-      op_and    <= entradaA and entradaB;
-      op_or     <= entradaA or entradaB;
-      op_nor    <= entradaA nor entradaB;
-      --op_not    <= not entradaA;
+   signal ADD  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+   signal SUB  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+   signal ANDOP: STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+   signal OROP : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal SLT  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal LW   : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal SW   : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+	signal BEQ  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+   begin
+      ADD   <= STD_LOGIC_VECTOR(signed(entradaA) + signed(entradaB));
+      SUB   <= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
+      ANDOP <= entradaA and entradaB;
+      OROP  <= entradaA or entradaB;
+		SLT   <= 31x"0"&SUB(31);
+		LW    <= entradaA;
+		SW    <= entradaB;
+		BEQ   <= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
+      saida <= ADD   when (seletor = "0000") else
+				   SUB   when (seletor = "0001") else
+				   ANDOP when (seletor = "0010") else
+				   OROP  when (seletor = "0011") else
+				   SLT   when (seletor = "0100") else
+					LW    when (seletor = "0101") else
+				   SW    when (seletor = "0110") else
+					BEQ;
 		
-		--sub_result<= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
-		slt       <= 31x"0"&subtracao(31);
-
-      saida <= subtracao when (seletor = "0000") else
-				   soma when      (seletor = "0001") else
-				   op_nor when    (seletor = "0010") else
-				   op_and when    (seletor = "0011") else
-				   op_or when     (seletor = "0100") else
-					slt   when     (seletor = "0101") else
-				   entradaA when  (seletor = "0110") else
-					entradaB;
-		
-		flagEQ <= '1' when unsigned(subtracao) = 0 else '0';
+		flagEQ <= '1' when unsigned(BEQ) = 0 else '0';
 
 end architecture;
