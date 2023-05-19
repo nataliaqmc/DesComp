@@ -110,7 +110,7 @@ end generate;
 PCounter : entity work.registradorGenerico  generic map (larguraDados => larguraEnderecos)
           port map (DIN => PC_IN,
 						  DOUT => PC_OUT, 
-						  ENABLE => '1',
+					  ENABLE => '1',
 						  CLK => CLK, 
 						  RST => '0');
 
@@ -151,7 +151,9 @@ MUX_REG_OUT : entity work.muxGenerico2x1  generic map (larguraDados => 32)
 ULA : entity work.ULA  generic map(larguraDados => larguraDados)
           port map (entradaA => ULA_A,
 						  entradaB => ULA_B,
-						  saida => Saida_ULA, 
+						  saida => Saida_ULA,
+						  inverteA =>'1',
+						  inverteB => '1',
 						  flagEQ => flagULA,
 						  seletor => ctrlULA);
 

@@ -272,6 +272,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
 #====================================================================
 # Fim da configuraÃ§Ã£o dos pinos utilizados em Design de Computadores.
 #====================================================================
+set_global_assignment -name VHDL_FILE ULAbitOverflow.vhd
 set_global_assignment -name VHDL_FILE registradorBooleano.vhd
 set_global_assignment -name VHDL_FILE buffer_3_state_8portas.vhd
 set_global_assignment -name VHDL_FILE buffer_3_state_1porta.vhd
@@ -293,4 +294,8 @@ set_global_assignment -name VHDL_FILE logicaLEDS.vhd
 set_global_assignment -name VHDL_FILE logicaKEYS.vhd
 set_global_assignment -name VHDL_FILE logicaSWs.vhd
 set_global_assignment -name VHDL_FILE UnidadeControleULA.vhd
+set_global_assignment -name VHDL_FILE ULA1bit.vhd
+set_global_assignment -name VHDL_FILE muxULA.vhd
+set_global_assignment -name VHDL_FILE somador1bit.vhd
+set_global_assignment -name VHDL_FILE ULAbit31.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
