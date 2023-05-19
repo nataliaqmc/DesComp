@@ -21,12 +21,12 @@ architecture comportamento of UnidadeControleULA is
   constant BEQ   : std_logic_vector(1 downto 0) := "11";
     
   begin
-saida <= "0000" when (funct = ADD   and ULAop = Rinstr) else
-			"0001" when (funct = SUB   and ULAop = Rinstr) else
-			"0010" when (funct = ANDOP and ULAop = Rinstr) else
-         "0011" when (funct = OROP  and ULAop = Rinstr) else
-			"0100" when (funct = SLT   and ULAop = Rinstr) else
-			"0101" when (ULAop = LW) else
-			"0110" when (ULAop = SW)  else
-			"0111" when (ULAop = BEQ);  
+saida <= "0000" when (funct = ANDOP and ULAop = Rinstr) else
+         "0001" when (funct = OROP  and ULAop = Rinstr) else
+			"0010" when (funct = ADD   and ULAop = Rinstr) else
+			"0110" when (funct = SUB   and ULAop = Rinstr) else
+			"0111" when (funct = SLT   and ULAop = Rinstr) else
+			"0010" when (ULAop = LW) else
+			"0010" when (ULAop = SW)  else
+			"0110" when (ULAop = BEQ);  
 end architecture;

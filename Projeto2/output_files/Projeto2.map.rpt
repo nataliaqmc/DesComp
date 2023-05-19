@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Fri May 19 15:45:35 2023
+Fri May 19 17:10:02 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -34,67 +34,52 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  26. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_BEQ
  27. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PC_BEQ_JMP
  28. Parameter Settings for User Entity Instance: deslocadorGenerico:SHIFTER_PC
- 29. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_COMPONENTES
- 30. Parameter Settings for User Entity Instance: logicLEDS:LED
- 31. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_9
- 32. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_8
- 33. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_7
- 34. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_6
- 35. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_5
- 36. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_4
- 37. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_3
- 38. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_2
- 39. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_1
- 40. Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_0
- 41. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_0"
- 42. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_1"
- 43. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_2"
- 44. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_3"
- 45. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_4"
- 46. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_5"
- 47. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_6"
- 48. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_7"
- 49. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_8"
- 50. Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_9"
- 51. Port Connectivity Checks: "muxGenerico2x1:MUX_PC_BEQ_JMP"
- 52. Port Connectivity Checks: "RAMMIPS:RAM"
- 53. Port Connectivity Checks: "ULA:ULA|ULAbit31:bit31|muxULA:muxA"
- 54. Port Connectivity Checks: "ULA:ULA|ULAbit31:bit31"
- 55. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit30"
- 56. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit29"
- 57. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit28"
- 58. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit27"
- 59. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit26"
- 60. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit25"
- 61. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit24"
- 62. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit23"
- 63. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit22"
- 64. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit21"
- 65. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit20"
- 66. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit19"
- 67. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit18"
- 68. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit17"
- 69. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit16"
- 70. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit15"
- 71. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit14"
- 72. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit13"
- 73. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit12"
- 74. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit11"
- 75. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit10"
- 76. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit9"
- 77. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit8"
- 78. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit7"
- 79. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit6"
- 80. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit5"
- 81. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit4"
- 82. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit3"
- 83. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit2"
- 84. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit1"
- 85. Port Connectivity Checks: "ULA:ULA"
- 86. Port Connectivity Checks: "registradorGenerico:PCounter"
- 87. Post-Synthesis Netlist Statistics for Top Partition
- 88. Elapsed Time Per Partition
- 89. Analysis & Synthesis Messages
+ 29. Parameter Settings for User Entity Instance: muxGenerico4x1:MUX_COMPONENTES
+ 30. Port Connectivity Checks: "conversorHex7Seg:HEX_5"
+ 31. Port Connectivity Checks: "conversorHex7Seg:HEX_4"
+ 32. Port Connectivity Checks: "conversorHex7Seg:HEX_3"
+ 33. Port Connectivity Checks: "conversorHex7Seg:HEX_2"
+ 34. Port Connectivity Checks: "conversorHex7Seg:HEX_1"
+ 35. Port Connectivity Checks: "conversorHex7Seg:HEX_0"
+ 36. Port Connectivity Checks: "muxGenerico2x1:MUX_PC_BEQ_JMP"
+ 37. Port Connectivity Checks: "RAMMIPS:RAM"
+ 38. Port Connectivity Checks: "ULA:ULA|ULAbit31:bit31|muxULA:muxA"
+ 39. Port Connectivity Checks: "ULA:ULA|ULAbit31:bit31"
+ 40. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit30"
+ 41. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit29"
+ 42. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit28"
+ 43. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit27"
+ 44. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit26"
+ 45. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit25"
+ 46. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit24"
+ 47. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit23"
+ 48. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit22"
+ 49. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit21"
+ 50. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit20"
+ 51. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit19"
+ 52. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit18"
+ 53. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit17"
+ 54. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit16"
+ 55. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit15"
+ 56. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit14"
+ 57. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit13"
+ 58. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit12"
+ 59. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit11"
+ 60. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit10"
+ 61. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit9"
+ 62. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit8"
+ 63. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit7"
+ 64. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit6"
+ 65. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit5"
+ 66. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit4"
+ 67. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit3"
+ 68. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit2"
+ 69. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit1"
+ 70. Port Connectivity Checks: "ULA:ULA|ULA1bit:bit0|muxULA:muxA"
+ 71. Port Connectivity Checks: "registradorGenerico:PCounter"
+ 72. Post-Synthesis Netlist Statistics for Top Partition
+ 73. Elapsed Time Per Partition
+ 74. Analysis & Synthesis Messages
 
 
 
@@ -121,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 19 15:45:35 2023       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 19 17:10:02 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
@@ -254,7 +239,6 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; registradorBooleano.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/registradorBooleano.vhd  ;         ;
 ; ULA.vhd                          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULA.vhd                  ;         ;
 ; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxGenerico2x1.vhd       ;         ;
 ; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/estendeSinalGenerico.vhd ;         ;
@@ -268,12 +252,13 @@ https://fpgasoftware.intel.com/eula.
 ; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/registradorGenerico.vhd  ;         ;
 ; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd              ;         ;
 ; Projeto2.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/Projeto2.vhd             ;         ;
-; logicaLEDS.vhd                   ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/logicaLEDS.vhd           ;         ;
 ; UnidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd   ;         ;
 ; ULA1bit.vhd                      ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULA1bit.vhd              ;         ;
 ; muxULA.vhd                       ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxULA.vhd               ;         ;
 ; somador1bit.vhd                  ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/somador1bit.vhd          ;         ;
 ; ULAbit31.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULAbit31.vhd             ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd       ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd     ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 
 
@@ -282,14 +267,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1569                                    ;
+; Estimate of Logic utilization (ALMs needed) ; 1598                                    ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1337                                    ;
-;     -- 7 input functions                    ; 3                                       ;
-;     -- 6 input functions                    ; 797                                     ;
-;     -- 5 input functions                    ; 83                                      ;
-;     -- 4 input functions                    ; 147                                     ;
-;     -- <=3 input functions                  ; 307                                     ;
+; Combinational ALUT usage for logic          ; 1405                                    ;
+;     -- 7 input functions                    ; 4                                       ;
+;     -- 6 input functions                    ; 832                                     ;
+;     -- 5 input functions                    ; 101                                     ;
+;     -- 4 input functions                    ; 180                                     ;
+;     -- <=3 input functions                  ; 288                                     ;
 ;                                             ;                                         ;
 ; Dedicated logic registers                   ; 2143                                    ;
 ;                                             ;                                         ;
@@ -299,91 +284,129 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
 ; Maximum fan-out                             ; 2142                                    ;
-; Total fan-out                               ; 13195                                   ;
-; Average fan-out                             ; 3.53                                    ;
+; Total fan-out                               ; 13568                                   ;
+; Average fan-out                             ; 3.56                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                        ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+---------------------+--------------+
-; |Projeto2                              ; 1337 (9)            ; 2143 (0)                  ; 0                 ; 0          ; 131  ; 0            ; |Projeto2                                           ; Projeto2            ; work         ;
-;    |RAMMIPS:RAM|                       ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:RAM                               ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                       ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                               ; ROMMIPS             ; work         ;
-;    |UC:UC|                             ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UC:UC                                     ; UC                  ; work         ;
-;    |ULA:ULA|                           ; 141 (33)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                   ; ULA                 ; work         ;
-;       |ULA1bit:bit0|                   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0                      ; ULA1bit             ; work         ;
-;       |ULA1bit:bit10|                  ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit11|                  ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit12|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12                     ; ULA1bit             ; work         ;
-;       |ULA1bit:bit13|                  ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit14|                  ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit15|                  ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit16|                  ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit17|                  ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit18|                  ; 5 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit19|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit1|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit20|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit21|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit22|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22                     ; ULA1bit             ; work         ;
-;       |ULA1bit:bit23|                  ; 7 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit24|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit25|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit26|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit27|                  ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit28|                  ; 6 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit29|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit2|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit30|                  ; 3 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30                     ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|somador1bit:somador ; somador1bit         ; work         ;
-;       |ULA1bit:bit3|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit4|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit5|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit6|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit7|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit8|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit9|                   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9                      ; ULA1bit             ; work         ;
-;       |ULAbit31:bit31|                 ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                    ; ULAbit31            ; work         ;
-;    |UnidadeControleULA:UC_ULA|         ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                 ; UnidadeControleULA  ; work         ;
-;    |bancoReg:BANCO_REGISTRADORES|      ; 161 (161)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES              ; bancoReg            ; work         ;
-;    |edgeDetector:\gravar:detectorSub0| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0         ; edgeDetector        ; work         ;
-;    |muxGenerico2x1:MUX_COMPONENTES|    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_COMPONENTES            ; muxGenerico2x1      ; work         ;
-;    |muxGenerico2x1:MUX_PC_BEQ_JMP|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_PC_BEQ_JMP             ; muxGenerico2x1      ; work         ;
-;    |muxGenerico2x1:MUX_REG_OUT|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_REG_OUT                ; muxGenerico2x1      ; work         ;
-;    |muxGenerico2x1:MUX_ULA|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_ULA                    ; muxGenerico2x1      ; work         ;
-;    |registradorGenerico:PCounter|      ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico:PCounter              ; registradorGenerico ; work         ;
-;    |somaConstante:incrementaPC|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somaConstante:incrementaPC                ; somaConstante       ; work         ;
-;    |somadorGenerico:SOMADOR|           ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                   ; somadorGenerico     ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
+; |Projeto2                              ; 1405 (9)            ; 2143 (0)                  ; 0                 ; 0          ; 131  ; 0            ; |Projeto2                                            ; Projeto2            ; work         ;
+;    |RAMMIPS:RAM|                       ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:RAM                                ; RAMMIPS             ; work         ;
+;    |ROMMIPS:ROM|                       ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                                ; ROMMIPS             ; work         ;
+;    |UC:UC|                             ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UC:UC                                      ; UC                  ; work         ;
+;    |ULA:ULA|                           ; 167 (33)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                    ; ULA                 ; work         ;
+;       |ULA1bit:bit0|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0                       ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit10|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit11|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit12|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit13|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit14|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit15|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit16|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit17|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit18|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit19|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit1|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit20|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit21|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit22|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit23|                  ; 6 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit24|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit25|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit26|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit27|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit28|                  ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit29|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit2|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit30|                  ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit3|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3                       ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit4|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit5|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit6|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit7|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit8|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8                       ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit9|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULAbit31:bit31|                 ; 6 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                     ; ULAbit31            ; work         ;
+;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31|somador1bit:somador ; somador1bit         ; work         ;
+;    |UnidadeControleULA:UC_ULA|         ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                  ; UnidadeControleULA  ; work         ;
+;    |bancoReg:BANCO_REGISTRADORES|      ; 163 (163)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES               ; bancoReg            ; work         ;
+;    |conversorHex7Seg:HEX_0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_0                     ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:HEX_1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_1                     ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:HEX_2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_2                     ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:HEX_3|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_3                     ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:HEX_4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_4                     ; conversorHex7Seg    ; work         ;
+;    |conversorHex7Seg:HEX_5|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_5                     ; conversorHex7Seg    ; work         ;
+;    |edgeDetector:\gravar:detectorSub0| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0          ; edgeDetector        ; work         ;
+;    |muxGenerico2x1:MUX_PC_BEQ_JMP|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_PC_BEQ_JMP              ; muxGenerico2x1      ; work         ;
+;    |muxGenerico2x1:MUX_REG_OUT|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_REG_OUT                 ; muxGenerico2x1      ; work         ;
+;    |muxGenerico2x1:MUX_ULA|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_ULA                     ; muxGenerico2x1      ; work         ;
+;    |muxGenerico4x1:MUX_COMPONENTES|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES             ; muxGenerico4x1      ; work         ;
+;    |registradorGenerico:PCounter|      ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico:PCounter               ; registradorGenerico ; work         ;
+;    |somaConstante:incrementaPC|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somaConstante:incrementaPC                 ; somaConstante       ; work         ;
+;    |somadorGenerico:SOMADOR|           ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                    ; somadorGenerico     ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -392,9 +415,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
+; UnidadeControleULA:UC_ULA|saida[2]                 ; GND                 ; yes                    ;
 ; UnidadeControleULA:UC_ULA|saida[0]                 ; GND                 ; yes                    ;
 ; UnidadeControleULA:UC_ULA|saida[1]                 ; GND                 ; yes                    ;
-; UnidadeControleULA:UC_ULA|saida[2]                 ; GND                 ; yes                    ;
 ; Number of user-specified and inferred latches = 3  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -407,16 +430,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------------+--------------------------------------------------+
 ; registradorGenerico:PCounter|DOUT[0]          ; Merged with registradorGenerico:PCounter|DOUT[1] ;
 ; registradorGenerico:PCounter|DOUT[1]          ; Stuck at GND due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_0|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_1|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_2|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_3|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_4|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_5|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_6|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_7|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_8|DOUT  ; Stuck at VCC due to stuck port data_in           ;
-; logicLEDS:LED|registradorBooleano:LED_9|DOUT  ; Stuck at VCC due to stuck port data_in           ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~166  ; Lost fanout                                      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~167  ; Lost fanout                                      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~168  ; Lost fanout                                      ;
@@ -1185,31 +1198,31 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~1059 ; Lost fanout                                      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~1060 ; Lost fanout                                      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~1061 ; Lost fanout                                      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~70   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~71   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~72   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~73   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~74   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~75   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~76   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~77   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~78   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~79   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~80   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~81   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~82   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~83   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~84   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~85   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~86   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~87   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~88   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~89   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~90   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~91   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~92   ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~93   ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~94   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~93   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~92   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~91   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~90   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~89   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~88   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~87   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~86   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~85   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~84   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~83   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~82   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~81   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~80   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~79   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~78   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~77   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~76   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~75   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~74   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~73   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~72   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~71   ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~70   ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~95   ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~96   ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~97   ; Stuck at GND due to stuck port clock_enable      ;
@@ -1217,56 +1230,56 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~99   ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~100  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~101  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~134  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~102  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~135  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~103  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~136  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~104  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~137  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~105  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~138  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~106  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~139  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~107  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~140  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~108  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~141  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~109  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~142  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~110  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~143  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~111  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~144  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~112  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~145  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~113  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~146  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~114  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~147  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~115  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~148  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~116  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~149  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~117  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~150  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~118  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~151  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~119  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~152  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~120  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~153  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~121  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~154  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~122  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~155  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~123  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~156  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~124  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~157  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~125  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~158  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~126  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~157  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~125  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~156  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~124  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~155  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~123  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~154  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~122  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~153  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~121  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~152  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~120  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~151  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~119  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~150  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~118  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~149  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~117  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~148  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~116  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~147  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~115  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~146  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~114  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~145  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~113  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~144  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~112  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~143  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~111  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~142  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~110  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~141  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~109  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~140  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~108  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~139  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~107  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~138  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~106  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~137  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~105  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~136  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~104  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~135  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~103  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~134  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~102  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~159  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~127  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~160  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1281,8 +1294,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~132  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~165  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~133  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~350  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~327  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~326  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~328  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~329  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~330  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1305,7 +1319,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~347  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~348  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~349  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~350  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~351  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~352  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~353  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1313,10 +1326,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~355  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~356  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~357  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~390  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~358  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~414  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~382  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~391  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~359  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~390  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~358  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~392  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~360  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~393  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1361,8 +1376,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~380  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~413  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~381  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~414  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~382  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~415  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~383  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~416  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1377,7 +1390,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~388  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~421  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~389  ; Stuck at GND due to stuck port clock_enable      ;
-; Total Number of Removed Registers = 972       ;                                                  ;
+; Total Number of Removed Registers = 962       ;                                                  ;
 +-----------------------------------------------+--------------------------------------------------+
 
 
@@ -1386,8 +1399,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+--------------------------------+-----------------------------------------------+
 ; Register name                                ; Reason for Removal             ; Registers Removed due to This Register        ;
 +----------------------------------------------+--------------------------------+-----------------------------------------------+
-; bancoReg:BANCO_REGISTRADORES|registrador~329 ; Stuck at GND                   ; bancoReg:BANCO_REGISTRADORES|registrador~330, ;
-;                                              ; due to stuck port clock_enable ; bancoReg:BANCO_REGISTRADORES|registrador~331, ;
+; bancoReg:BANCO_REGISTRADORES|registrador~327 ; Stuck at GND                   ; bancoReg:BANCO_REGISTRADORES|registrador~326, ;
+;                                              ; due to stuck port clock_enable ; bancoReg:BANCO_REGISTRADORES|registrador~328, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~329, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~330, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~331, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~332, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~333, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~334, ;
@@ -1406,7 +1422,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~347, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~348, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~349, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~350, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~351, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~352, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~353, ;
@@ -1414,12 +1429,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~355, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~356, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~357, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~390, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~358, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~414, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~382, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~391, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~359, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~390, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~358, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~392, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~360, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~393, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~361, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~394, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~362, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~395, ;
@@ -1460,8 +1479,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~380, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~413, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~381, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~414, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~382, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~415, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~383, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~416, ;
@@ -1476,8 +1493,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~388, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~421, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~389  ;
-; registradorGenerico:PCounter|DOUT[1]         ; Stuck at GND                   ; logicLEDS:LED|registradorBooleano:LED_0|DOUT, ;
-;                                              ; due to stuck port data_in      ; logicLEDS:LED|registradorBooleano:LED_1|DOUT  ;
 +----------------------------------------------+--------------------------------+-----------------------------------------------+
 
 
@@ -1496,18 +1511,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[24] ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[6]  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[2]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[0]                        ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit6|saida            ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[5]                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[27]        ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[20]        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[3]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[4]                               ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit3|saida                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[0]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[27] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[5]                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1681,7 +1698,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_COMPONENTES ;
+; Parameter Settings for User Entity Instance: muxGenerico4x1:MUX_COMPONENTES ;
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
@@ -1690,204 +1707,70 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; larguradados   ; 10    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_5" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_9 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_4" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_8 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_3" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_7 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_2" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_6 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_1" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_5 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_4 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_3 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_2 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_1 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logicLEDS:LED|registradorBooleano:LED_0 ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; larguradados   ; 1     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_0" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_1" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_2" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_3" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_4" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_5" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_6" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_7" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_8" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "logicLEDS:LED|registradorBooleano:LED_9" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; rst  ; Input ; Info     ; Stuck at GND                              ;
-+------+-------+----------+-------------------------------------------+
++----------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:HEX_0" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; apaga    ; Input ; Info     ; Stuck at GND         ;
+; negativo ; Input ; Info     ; Stuck at GND         ;
+; overflow ; Input ; Info     ; Stuck at GND         ;
++----------+-------+----------+----------------------+
 
 
 +-----------------------------------------------------------+
@@ -2196,14 +2079,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "ULA:ULA"        ;
-+----------+-------+----------+--------------+
-; Port     ; Type  ; Severity ; Details      ;
-+----------+-------+----------+--------------+
-; inverteb ; Input ; Info     ; Stuck at VCC ;
-; invertea ; Input ; Info     ; Stuck at VCC ;
-+----------+-------+----------+--------------+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA|ULA1bit:bit0|muxULA:muxA" ;
++-------------+-------+----------+-----------------------------+
+; Port        ; Type  ; Severity ; Details                     ;
++-------------+-------+----------+-----------------------------+
+; seletor_mux ; Input ; Info     ; Stuck at GND                ;
++-------------+-------+----------+-----------------------------+
 
 
 +----------------------------------------------------------+
@@ -2224,7 +2106,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2143                        ;
 ;     ENA               ; 2112                        ;
 ;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 1371                        ;
+; arriav_lcell_comb     ; 1406                        ;
 ;     arith             ; 93                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 30                          ;
@@ -2232,20 +2114,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 32                          ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 1275                        ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 33                          ;
-;         2 data inputs ; 155                         ;
-;         3 data inputs ; 93                          ;
-;         4 data inputs ; 144                         ;
-;         5 data inputs ; 51                          ;
-;         6 data inputs ; 797                         ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 1309                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 182                         ;
+;         3 data inputs ; 47                          ;
+;         4 data inputs ; 177                         ;
+;         5 data inputs ; 69                          ;
+;         6 data inputs ; 832                         ;
 ; boundary_port         ; 131                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 6.94                        ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 7.01                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2254,7 +2136,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -2264,7 +2146,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri May 19 15:45:23 2023
+    Info: Processing started: Fri May 19 17:09:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ulabitoverflow.vhd
@@ -2343,7 +2225,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file somador
 Info (12021): Found 2 design units, including 1 entities, in source file ulabit31.vhd
     Info (12022): Found design unit 1: ULAbit31-comportamento File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 19
     Info (12023): Found entity 1: ULAbit31 File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(16) File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 101
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PCounter" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 110
 Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 118
@@ -2353,10 +2242,10 @@ Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:
 Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BANCO_REGISTRADORES" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 134
 Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_OUT" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 144
 Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 151
-Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA:ULA|ULA1bit:bit0" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 64
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA:ULA|ULA1bit:bit0" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 66
 Info (12128): Elaborating entity "muxULA" for hierarchy "ULA:ULA|ULA1bit:bit0|muxULA:muxA" File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 27
 Info (12128): Elaborating entity "somador1bit" for hierarchy "ULA:ULA|ULA1bit:bit0|somador1bit:somador" File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 38
-Info (12128): Elaborating entity "ULAbit31" for hierarchy "ULA:ULA|ULAbit31:bit31" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 126
+Info (12128): Elaborating entity "ULAbit31" for hierarchy "ULA:ULA|ULAbit31:bit31" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 128
 Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(25): object "muxAout" assigned a value but never read File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 25
 Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 169
 Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:EXTENSOR_SINAL" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 179
@@ -2369,8 +2258,8 @@ Info (10041): Inferred latch for "saida[0]" at UnidadeControleULA.vhd(24) File: 
 Info (10041): Inferred latch for "saida[1]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
 Info (10041): Inferred latch for "saida[2]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
 Info (10041): Inferred latch for "saida[3]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
-Info (12128): Elaborating entity "logicLEDS" for hierarchy "logicLEDS:LED" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 227
-Info (12128): Elaborating entity "registradorBooleano" for hierarchy "logicLEDS:LED|registradorBooleano:LED_9" File: C:/DesComp/DesComp/Projeto2/logicaLEDS.vhd Line: 17
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_COMPONENTES" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 220
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 234
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 21
     Info (276007): RAM logic "bancoReg:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/DesComp/DesComp/Projeto2/bancoReg.vhd Line: 49
@@ -2411,36 +2300,16 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "PC[0]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 13
     Warning (13410): Pin "PC[1]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 13
-    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[1]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[2]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[5]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[6]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[7]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 21
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 21
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 21
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 22
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[2]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[3]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[4]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
@@ -2448,14 +2317,15 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[6]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-Info (21057): Implemented 3580 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
+Info (21057): Implemented 3648 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 116 output pins
-    Info (21061): Implemented 3449 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Fri May 19 15:45:35 2023
-    Info: Elapsed time: 00:00:12
+    Info (21061): Implemented 3517 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Fri May 19 17:10:02 2023
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:14
 
 

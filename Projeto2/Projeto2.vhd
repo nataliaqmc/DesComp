@@ -152,10 +152,10 @@ ULA : entity work.ULA  generic map(larguraDados => larguraDados)
           port map (entradaA => ULA_A,
 						  entradaB => ULA_B,
 						  saida => Saida_ULA,
-						  inverteA =>'1',
-						  inverteB => '1',
+						  inverteA =>ctrlULA(3),
+						  inverteB => ctrlULA(2),
 						  flagEQ => flagULA,
-						  seletor => ctrlULA);
+						  seletor => ctrlULA(1 downto 0));
 
 MUX_ULA : entity work.muxGenerico2x1  generic map (larguraDados => 32)
 			 port map (entradaA_MUX => Saida_ULA,
@@ -216,18 +216,66 @@ UC_ULA : entity work.UnidadeControleULA
 						  ULAop => ULAop, 
 						  saida => ctrlULA);
 
-
 -- Verificação do funcionamento:
-MUX_COMPONENTES : entity work.muxGenerico2x1 generic map (larguraDados => 32)
+MUX_COMPONENTES : entity work.muxGenerico4x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => PC_OUT,
 						  entradaB_MUX => Saida_ULA,
-						  seletor_MUX => SW(9),
+						  entradaC_MUX =>ULA_A,
+						  entradaD_MUX => ULA_B,
+						  seletor_MUX => SW(1 downto 0),
 						  saida_MUX => mux_displays);
 
-LED: entity work.logicLEDS generic map (larguraDados => 10)
-			 port map (CLK => CLK,
-						  Data_IN => mux_displays,
-						  LEDR => LEDS);
+--LED: entity work.logicLEDS generic map (larguraDados => 10)
+--			 port map (CLK => CLK,
+--						  Data_IN => mux_displays,
+--						  LEDR => LEDS);
+						  
+						  
+HEX_0 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(3 downto 0),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX0);
+						 		  
+HEX_1 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(7 downto 4),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX1);
+					  
+HEX_2 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(11 downto 8),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX2);
+					  
+HEX_3 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(15 downto 12),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX3);
+
+					  
+HEX_4 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(19 downto 16),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX4);
+
+HEX_5 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(23 downto 20),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX5);
+						 		  
+LEDR(3 downto 0) <= mux_displays(27 downto 24);
+LEDR(7 downto 4) <= mux_displays(31 downto 28);
 						 		  
 -- Definindo os valores das instruções:
 opCode   <= dadoROM (31 downto 26);
@@ -263,14 +311,6 @@ PC <= EnderecoROM;
 Saida_ULA_leitura	<=Saida_ULA;
 
 
-HEX0 <= not mux_displays(6 downto 0);
-HEX1 <= not mux_displays(13 downto 7);
-HEX2 <= not mux_displays(20 downto 14);
-HEX3 <= not mux_displays(27 downto 21);
-HEX4 <= not mux_displays(31 downto 28) & "111";
-HEX5 <= "1111111";
-
-LEDR <= LEDS;
 
 
 end architecture;

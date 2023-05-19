@@ -10,7 +10,7 @@ entity ULAbit31 is
 		slt: in std_logic;
 		inverteB,inverteA: in std_logic;
 		carryIn: in std_logic;
-      seletor:  in STD_LOGIC_VECTOR(3 downto 0);
+      seletor:  in STD_LOGIC_VECTOR(1 downto 0);
 		Overflow: out std_logic;
       saida:    out STD_LOGIC
 		);
@@ -24,6 +24,7 @@ architecture comportamento of ULAbit31 is
    signal OROP : STD_LOGIC;
 	signal muxAout: STD_LOGIC;
 	signal muxBout: STD_LOGIC;
+	signal somadorOut: STD_LOGIC;
 	
 begin
 muxA: entity  work.muxULA
@@ -48,10 +49,10 @@ ANDOP <= entradaA and muxBout;
 OROP  <= entradaA or muxBout;
 somadorOut <= ADD;
 
-saida <= ANDOP when (seletor = "0000") else
-			OROP  when (seletor = "0001") else
-			ADD   when (seletor = "0010") else	   
-			slt   when (seletor = "0011") else
+saida <= ANDOP when (seletor = "00") else
+			OROP  when (seletor = "01") else
+			ADD   when (seletor = "10") else	   
+			slt   when (seletor = "11") else
 			somadorOut;
-Overflow <= (carryIn xor carryOut) xor ADD;
+Overflow <= (carryIn xor carryOut);
 end architecture;

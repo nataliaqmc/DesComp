@@ -11,7 +11,7 @@ entity ULA is
     (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 		inverteB,inverteA: std_logic;
-		seletor:  in STD_LOGIC_VECTOR(3 downto 0);
+		seletor:  in STD_LOGIC_VECTOR(1 downto 0);
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 		flagEQ:   out STD_LOGIC
     );
@@ -61,6 +61,8 @@ architecture comportamento of ULA is
 	signal SW   : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 	signal BEQ  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
    begin
+	
+
 bit0: entity work.ULA1bit
 	port map( entradaA => entradaA(0),entradaB => entradaB(0),slt => carryOut31,inverteA =>inverteA, inverteB => inverteB,carryIn => inverteB,seletor => seletor,carryOut=> carryOut0,saida => saida(0));
 bit1: entity work.ULA1bit

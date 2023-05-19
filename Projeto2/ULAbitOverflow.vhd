@@ -46,9 +46,9 @@ ANDOP <= muxAout and muxBout;
 OROP  <= muxAout or muxBout;
 
 
-saida <= ANDOP when (seletor = "0000") else
-			OROP  when (seletor = "0001") else
-			ADD   when (seletor = "0010") else	   
-			slt   when (seletor = "0011") else
+saida <= ANDOP when (seletor = "00") else
+			OROP  when (seletor = "01") else
+			ADD   when (seletor = "10") else	   
+			slt   when (seletor = "11") else
 			'0';
 end architecture;

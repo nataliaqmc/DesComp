@@ -9,7 +9,7 @@ entity ULA1bit is
 		inverteA,inverteB: in std_logic;
 		carryIn,slt: in std_logic;
 		carryOut: out std_logic;
-      seletor:  in STD_LOGIC_VECTOR(3 downto 0);
+      seletor:  in STD_LOGIC_VECTOR(1 downto 0);
       saida:    out STD_LOGIC
 		);
 end entity;
@@ -27,7 +27,7 @@ begin
 muxA: entity  work.muxULA
 	port map (entradaA_MUX => entradaA,
 				 entradaB_MUX => not entradaA,
-				 seletor_MUX => inverteA,
+				 seletor_MUX => '0',
 				 saida_MUX => muxAout);
 muxB: entity  work.muxULA
 	port map (entradaA_MUX => entradaB,
@@ -45,7 +45,7 @@ somador: entity work.somador1bit
 ANDOP <= muxAout and muxBout;
 OROP  <= muxAout or muxBout;
 
-saida <= ANDOP when (seletor = "0000") else
-			OROP  when (seletor = "0001") else
+saida <= ANDOP when (seletor = "00") else
+			OROP  when (seletor = "01") else
 			somadorOut;
 end architecture;
