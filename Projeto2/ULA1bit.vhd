@@ -29,6 +29,7 @@ muxA: entity  work.muxULA
 				 entradaB_MUX => not entradaA,
 				 seletor_MUX => '0',
 				 saida_MUX => muxAout);
+				 
 muxB: entity  work.muxULA
 	port map (entradaA_MUX => entradaB,
 				 entradaB_MUX => not entradaB,
@@ -44,8 +45,12 @@ somador: entity work.somador1bit
 				 
 ANDOP <= muxAout and muxBout;
 OROP  <= muxAout or muxBout;
+ADD <= somadorOut;
 
 saida <= ANDOP when (seletor = "00") else
 			OROP  when (seletor = "01") else
-			somadorOut;
+			ADD   when (seletor = "10") else	   
+			slt   when (seletor = "11") else
+			ADD;
+			
 end architecture;

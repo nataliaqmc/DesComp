@@ -22,6 +22,8 @@ entity Projeto2 is
 	 HEX5 : out std_logic_vector(6 downto 0);
 
 	 Saida_ULA_leitura	 : out std_logic_vector (larguraDados-1 downto 0)
+	 --TESTE
+	 
 	 
   );
 end entity;

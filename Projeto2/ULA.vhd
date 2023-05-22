@@ -51,6 +51,9 @@ architecture comportamento of ULA is
 	signal carryOut29: std_logic;
 	signal carryOut30: std_logic;
 	signal carryOut31: std_logic;
+	
+	signal SLT_inverte: std_logic;
+	signal somadorBit31: std_logic;
 
    signal ADD  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
    signal SUB  : STD_LOGIC_VECTOR((larguraDados-1) downto 0);
@@ -64,7 +67,7 @@ architecture comportamento of ULA is
 	
 
 bit0: entity work.ULA1bit
-	port map( entradaA => entradaA(0),entradaB => entradaB(0),slt => carryOut31,inverteA =>inverteA, inverteB => inverteB,carryIn => inverteB,seletor => seletor,carryOut=> carryOut0,saida => saida(0));
+	port map( entradaA => entradaA(0),entradaB => entradaB(0),slt => (carryOut30 xor carryOut31) xor somadorBit31,inverteA =>inverteA, inverteB => inverteB,carryIn => inverteB,seletor => seletor,carryOut=> carryOut0,saida => saida(0));
 bit1: entity work.ULA1bit
 	port map( entradaA => entradaA(1),entradaB => entradaB(1),slt => '0',inverteA => inverteA, inverteB => inverteB,carryIn => carryOut0,seletor => seletor,carryOut=> carryOut1,saida => saida(1));
 bit2: entity work.ULA1bit
@@ -128,7 +131,11 @@ bit30: entity work.ULA1bit
 bit31: entity work.ULAbit31
 	port map( entradaA => entradaA(31),entradaB => entradaB(31),slt => '0',inverteA => inverteA,inverteB => inverteB,carryIn => carryOut30,seletor => seletor,Overflow=> carryOut31,saida => saida(31));
 
-	BEQ   <= STD_LOGIC_VECTOR(signed(entradaA) - signed(entradaB));
-	flagEQ <= '1' when unsigned(BEQ) = 0 else '0';
+SLT_inverte <= not entradaB(31) when inverteB = '1' else entradaB(31);
+somadorBit31 <= carryOut30 xor (entradaA(31) xor SLT_inverte); 
+ 	
+	
+flagEQ <= '1' when saida = x"00000000" else '0';		
+
 
 end architecture;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Fri May 19 17:10:02 2023
+Sat May 20 22:37:18 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 19 17:10:02 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sat May 20 22:37:18 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
@@ -228,38 +228,38 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; ULA.vhd                          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULA.vhd                  ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxGenerico2x1.vhd       ;         ;
-; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/estendeSinalGenerico.vhd ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/edgeDetector.vhd         ;         ;
-; deslocadorGenerico.vhd           ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/deslocadorGenerico.vhd   ;         ;
-; bancoReg.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/bancoReg.vhd             ;         ;
-; UC.vhd                           ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/UC.vhd                   ;         ;
-; somadorGenerico.vhd              ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/somadorGenerico.vhd      ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/somaConstante.vhd        ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd              ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/registradorGenerico.vhd  ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd              ;         ;
-; Projeto2.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/Projeto2.vhd             ;         ;
-; UnidadeControleULA.vhd           ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd   ;         ;
-; ULA1bit.vhd                      ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULA1bit.vhd              ;         ;
-; muxULA.vhd                       ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxULA.vhd               ;         ;
-; somador1bit.vhd                  ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/somador1bit.vhd          ;         ;
-; ULAbit31.vhd                     ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/ULAbit31.vhd             ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd       ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; ULA.vhd                          ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA.vhd                  ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico2x1.vhd       ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/estendeSinalGenerico.vhd ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/edgeDetector.vhd         ;         ;
+; deslocadorGenerico.vhd           ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/deslocadorGenerico.vhd   ;         ;
+; bancoReg.vhd                     ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/bancoReg.vhd             ;         ;
+; UC.vhd                           ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UC.vhd                   ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somadorGenerico.vhd      ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somaConstante.vhd        ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ROMMIPS.vhd              ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/registradorGenerico.vhd  ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd              ;         ;
+; Projeto2.vhd                     ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd             ;         ;
+; UnidadeControleULA.vhd           ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd   ;         ;
+; ULA1bit.vhd                      ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA1bit.vhd              ;         ;
+; muxULA.vhd                       ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxULA.vhd               ;         ;
+; somador1bit.vhd                  ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somador1bit.vhd          ;         ;
+; ULAbit31.vhd                     ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULAbit31.vhd             ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico4x1.vhd       ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/conversorHex7Seg.vhd     ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------+
@@ -267,14 +267,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1598                                    ;
+; Estimate of Logic utilization (ALMs needed) ; 1597                                    ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1405                                    ;
-;     -- 7 input functions                    ; 4                                       ;
-;     -- 6 input functions                    ; 832                                     ;
-;     -- 5 input functions                    ; 101                                     ;
-;     -- 4 input functions                    ; 180                                     ;
-;     -- <=3 input functions                  ; 288                                     ;
+; Combinational ALUT usage for logic          ; 1360                                    ;
+;     -- 7 input functions                    ; 7                                       ;
+;     -- 6 input functions                    ; 860                                     ;
+;     -- 5 input functions                    ; 100                                     ;
+;     -- 4 input functions                    ; 147                                     ;
+;     -- <=3 input functions                  ; 246                                     ;
 ;                                             ;                                         ;
 ; Dedicated logic registers                   ; 2143                                    ;
 ;                                             ;                                         ;
@@ -284,8 +284,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
 ; Maximum fan-out                             ; 2142                                    ;
-; Total fan-out                               ; 13568                                   ;
-; Average fan-out                             ; 3.56                                    ;
+; Total fan-out                               ; 13496                                   ;
+; Average fan-out                             ; 3.58                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -294,12 +294,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name         ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
-; |Projeto2                              ; 1405 (9)            ; 2143 (0)                  ; 0                 ; 0          ; 131  ; 0            ; |Projeto2                                            ; Projeto2            ; work         ;
+; |Projeto2                              ; 1360 (10)           ; 2143 (0)                  ; 0                 ; 0          ; 131  ; 0            ; |Projeto2                                            ; Projeto2            ; work         ;
 ;    |RAMMIPS:RAM|                       ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:RAM                                ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                       ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                                ; ROMMIPS             ; work         ;
+;    |ROMMIPS:ROM|                       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                                ; ROMMIPS             ; work         ;
 ;    |UC:UC|                             ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UC:UC                                      ; UC                  ; work         ;
-;    |ULA:ULA|                           ; 167 (33)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                    ; ULA                 ; work         ;
-;       |ULA1bit:bit0|                   ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0                       ; ULA1bit             ; work         ;
+;    |ULA:ULA|                           ; 155 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                    ; ULA                 ; work         ;
+;       |ULA1bit:bit0|                   ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0                       ; ULA1bit             ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit10|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10|muxULA:muxB          ; muxULA              ; work         ;
@@ -307,91 +307,92 @@ https://fpgasoftware.intel.com/eula.
 ;       |ULA1bit:bit11|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit11|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit12|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit12|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit12|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit13|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13                      ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit14|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit13|                  ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13                      ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13|muxULA:muxB          ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit13|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit14|                  ; 5 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|somador1bit:somador  ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit14|somador1bit:somador  ; somador1bit         ; work         ;
 ;       |ULA1bit:bit15|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit15|somador1bit:somador  ; somador1bit         ; work         ;
 ;       |ULA1bit:bit16|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit16|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit17|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit17|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit17|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit18|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit18|                  ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit19|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit18|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit19|                  ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit19|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit1|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1                       ; ULA1bit             ; work         ;
+;       |ULA1bit:bit1|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|muxULA:muxB           ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|somador1bit:somador   ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit1|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit20|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit20|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit21|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit21|                  ; 6 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit22|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit21|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit22|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit23|                  ; 6 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit22|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit23|                  ; 7 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit24|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit23|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit24|                  ; 7 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit24|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit25|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit25|                  ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit26|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26                      ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit25|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit26|                  ; 7 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit26|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit27|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit27|                  ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|somador1bit:somador  ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit27|somador1bit:somador  ; somador1bit         ; work         ;
 ;       |ULA1bit:bit28|                  ; 7 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28|muxULA:muxB          ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit28|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit29|                  ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit29|                  ; 6 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|somador1bit:somador  ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit29|somador1bit:somador  ; somador1bit         ; work         ;
 ;       |ULA1bit:bit2|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2|muxULA:muxB           ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit2|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULA1bit:bit30|                  ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30                      ; ULA1bit             ; work         ;
+;       |ULA1bit:bit30|                  ; 8 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30                      ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|muxULA:muxB          ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|somador1bit:somador  ; somador1bit         ; work         ;
-;       |ULA1bit:bit3|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3                       ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3|somador1bit:somador   ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit30|somador1bit:somador  ; somador1bit         ; work         ;
+;       |ULA1bit:bit3|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3                       ; ULA1bit             ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit3|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit4|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4                       ; ULA1bit             ; work         ;
-;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|muxULA:muxB           ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|somador1bit:somador   ; somador1bit         ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit4|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit5|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5|muxULA:muxB           ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit5|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit6|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6|muxULA:muxB           ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit6|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULA1bit:bit7|                   ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7                       ; ULA1bit             ; work         ;
+;       |ULA1bit:bit7|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7|muxULA:muxB           ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit7|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULA1bit:bit8|                   ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8                       ; ULA1bit             ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULA1bit:bit9|                   ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9                       ; ULA1bit             ; work         ;
+;       |ULA1bit:bit8|                   ; 6 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8                       ; ULA1bit             ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|muxULA:muxB           ; muxULA              ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULA1bit:bit9|                   ; 5 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9                       ; ULA1bit             ; work         ;
 ;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|muxULA:muxB           ; muxULA              ; work         ;
-;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULAbit31:bit31|                 ; 6 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                     ; ULAbit31            ; work         ;
+;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|somador1bit:somador   ; somador1bit         ; work         ;
+;       |ULAbit31:bit31|                 ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                     ; ULAbit31            ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31|muxULA:muxB         ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31|somador1bit:somador ; somador1bit         ; work         ;
-;    |UnidadeControleULA:UC_ULA|         ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                  ; UnidadeControleULA  ; work         ;
-;    |bancoReg:BANCO_REGISTRADORES|      ; 163 (163)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES               ; bancoReg            ; work         ;
+;    |UnidadeControleULA:UC_ULA|         ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                  ; UnidadeControleULA  ; work         ;
+;    |bancoReg:BANCO_REGISTRADORES|      ; 134 (134)           ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES               ; bancoReg            ; work         ;
 ;    |conversorHex7Seg:HEX_0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_0                     ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:HEX_1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_1                     ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:HEX_2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_2                     ; conversorHex7Seg    ; work         ;
@@ -400,9 +401,9 @@ https://fpgasoftware.intel.com/eula.
 ;    |conversorHex7Seg:HEX_5|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_5                     ; conversorHex7Seg    ; work         ;
 ;    |edgeDetector:\gravar:detectorSub0| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|edgeDetector:\gravar:detectorSub0          ; edgeDetector        ; work         ;
 ;    |muxGenerico2x1:MUX_PC_BEQ_JMP|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_PC_BEQ_JMP              ; muxGenerico2x1      ; work         ;
-;    |muxGenerico2x1:MUX_REG_OUT|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_REG_OUT                 ; muxGenerico2x1      ; work         ;
+;    |muxGenerico2x1:MUX_REG_OUT|        ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_REG_OUT                 ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico2x1:MUX_ULA|            ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_ULA                     ; muxGenerico2x1      ; work         ;
-;    |muxGenerico4x1:MUX_COMPONENTES|    ; 38 (38)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES             ; muxGenerico4x1      ; work         ;
+;    |muxGenerico4x1:MUX_COMPONENTES|    ; 40 (40)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES             ; muxGenerico4x1      ; work         ;
 ;    |registradorGenerico:PCounter|      ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico:PCounter               ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somaConstante:incrementaPC                 ; somaConstante       ; work         ;
 ;    |somadorGenerico:SOMADOR|           ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                    ; somadorGenerico     ; work         ;
@@ -1326,8 +1327,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~355  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~356  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~357  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~414  ; Stuck at GND due to stuck port clock_enable      ;
-; bancoReg:BANCO_REGISTRADORES|registrador~382  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~391  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~359  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~390  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1376,6 +1375,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; bancoReg:BANCO_REGISTRADORES|registrador~380  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~413  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~381  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~414  ; Stuck at GND due to stuck port clock_enable      ;
+; bancoReg:BANCO_REGISTRADORES|registrador~382  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~415  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~383  ; Stuck at GND due to stuck port clock_enable      ;
 ; bancoReg:BANCO_REGISTRADORES|registrador~416  ; Stuck at GND due to stuck port clock_enable      ;
@@ -1399,11 +1400,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+--------------------------------+-----------------------------------------------+
 ; Register name                                ; Reason for Removal             ; Registers Removed due to This Register        ;
 +----------------------------------------------+--------------------------------+-----------------------------------------------+
-; bancoReg:BANCO_REGISTRADORES|registrador~327 ; Stuck at GND                   ; bancoReg:BANCO_REGISTRADORES|registrador~326, ;
-;                                              ; due to stuck port clock_enable ; bancoReg:BANCO_REGISTRADORES|registrador~328, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~329, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~330, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~331, ;
+; bancoReg:BANCO_REGISTRADORES|registrador~329 ; Stuck at GND                   ; bancoReg:BANCO_REGISTRADORES|registrador~330, ;
+;                                              ; due to stuck port clock_enable ; bancoReg:BANCO_REGISTRADORES|registrador~331, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~332, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~333, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~334, ;
@@ -1429,8 +1427,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~355, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~356, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~357, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~414, ;
-;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~382, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~391, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~359, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~390, ;
@@ -1479,6 +1475,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~380, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~413, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~381, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~414, ;
+;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~382, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~415, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~383, ;
 ;                                              ;                                ; bancoReg:BANCO_REGISTRADORES|registrador~416, ;
@@ -1517,13 +1515,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[27]        ;
-; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[20]        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[3]         ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[4]                               ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit3|saida                   ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[19]        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[2]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[0]                               ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[0]  ;
-; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[27] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[5]                               ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[22] ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit17|saida                  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[9]                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
@@ -2106,28 +2104,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2143                        ;
 ;     ENA               ; 2112                        ;
 ;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 1406                        ;
-;     arith             ; 93                          ;
-;         0 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 1361                        ;
+;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         2 data inputs ; 25                          ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 32                          ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 1309                        ;
+;     extend            ; 7                           ;
+;         7 data inputs ; 7                           ;
+;     normal            ; 1294                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 182                         ;
-;         3 data inputs ; 47                          ;
-;         4 data inputs ; 177                         ;
-;         5 data inputs ; 69                          ;
-;         6 data inputs ; 832                         ;
+;         2 data inputs ; 151                         ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 144                         ;
+;         5 data inputs ; 100                         ;
+;         6 data inputs ; 860                         ;
 ; boundary_port         ; 131                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 7.01                        ;
+; Max LUT depth         ; 19.00                       ;
+; Average LUT depth     ; 7.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2136,7 +2132,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -2146,186 +2142,184 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri May 19 17:09:49 2023
+    Info: Processing started: Sat May 20 22:37:10 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file ulabitoverflow.vhd
-    Info (12022): Found design unit 1: ULAbitOverflow-comportamento File: C:/DesComp/DesComp/Projeto2/ULAbitOverflow.vhd Line: 19
-    Info (12023): Found entity 1: ULAbitOverflow File: C:/DesComp/DesComp/Projeto2/ULAbitOverflow.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file registradorbooleano.vhd
-    Info (12022): Found design unit 1: registradorBooleano-comportamento File: C:/DesComp/DesComp/Projeto2/registradorBooleano.vhd Line: 15
-    Info (12023): Found entity 1: registradorBooleano File: C:/DesComp/DesComp/Projeto2/registradorBooleano.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file registradorBooleano.vhd
+    Info (12022): Found design unit 1: registradorBooleano-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/registradorBooleano.vhd Line: 15
+    Info (12023): Found entity 1: registradorBooleano File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/registradorBooleano.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_8portas.vhd
-    Info (12022): Found design unit 1: buffer_3_state_8_portas-comportamento File: C:/DesComp/DesComp/Projeto2/buffer_3_state_8portas.vhd Line: 11
-    Info (12023): Found entity 1: buffer_3_state_8_portas File: C:/DesComp/DesComp/Projeto2/buffer_3_state_8portas.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_8_portas-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/buffer_3_state_8portas.vhd Line: 11
+    Info (12023): Found entity 1: buffer_3_state_8_portas File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/buffer_3_state_8portas.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_1porta.vhd
-    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: C:/DesComp/DesComp/Projeto2/buffer_3_state_1porta.vhd Line: 12
-    Info (12023): Found entity 1: buffer_3_state_1porta File: C:/DesComp/DesComp/Projeto2/buffer_3_state_1porta.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 20
-    Info (12023): Found entity 1: ULA File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/DesComp/DesComp/Projeto2/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/DesComp/DesComp/Projeto2/muxGenerico2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/DesComp/DesComp/Projeto2/estendeSinalGenerico.vhd Line: 19
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/DesComp/DesComp/Projeto2/estendeSinalGenerico.vhd Line: 4
-Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/DesComp/DesComp/Projeto2/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/DesComp/DesComp/Projeto2/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/DesComp/DesComp/Projeto2/edgeDetector.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file deslocadorgenerico.vhd
-    Info (12022): Found design unit 1: deslocadorGenerico-comportamento File: C:/DesComp/DesComp/Projeto2/deslocadorGenerico.vhd Line: 18
-    Info (12023): Found entity 1: deslocadorGenerico File: C:/DesComp/DesComp/Projeto2/deslocadorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file bancoreg.vhd
-    Info (12022): Found design unit 1: bancoReg-comportamento File: C:/DesComp/DesComp/Projeto2/bancoReg.vhd Line: 30
-    Info (12023): Found entity 1: bancoReg File: C:/DesComp/DesComp/Projeto2/bancoReg.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file uc.vhd
-    Info (12022): Found design unit 1: UC-comportamento File: C:/DesComp/DesComp/Projeto2/UC.vhd Line: 10
-    Info (12023): Found entity 1: UC File: C:/DesComp/DesComp/Projeto2/UC.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/DesComp/DesComp/Projeto2/somadorGenerico.vhd Line: 17
-    Info (12023): Found entity 1: somadorGenerico File: C:/DesComp/DesComp/Projeto2/somadorGenerico.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/DesComp/DesComp/Projeto2/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/DesComp/DesComp/Projeto2/somaConstante.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd Line: 15
-    Info (12023): Found entity 1: ROMMIPS File: C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/DesComp/DesComp/Projeto2/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/DesComp/DesComp/Projeto2/registradorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 18
-    Info (12023): Found entity 1: RAMMIPS File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file projeto2.vhd
-    Info (12022): Found design unit 1: Projeto2-arquitetura File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 30
-    Info (12023): Found entity 1: Projeto2 File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file logicaleds.vhd
-    Info (12022): Found design unit 1: logicLEDS-comportamento File: C:/DesComp/DesComp/Projeto2/logicaLEDS.vhd Line: 14
-    Info (12023): Found entity 1: logicLEDS File: C:/DesComp/DesComp/Projeto2/logicaLEDS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file logicakeys.vhd
-    Info (12022): Found design unit 1: logicKeys-comportamento File: C:/DesComp/DesComp/Projeto2/logicaKEYS.vhd Line: 22
-    Info (12023): Found entity 1: logicKeys File: C:/DesComp/DesComp/Projeto2/logicaKEYS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file logicasws.vhd
-    Info (12022): Found design unit 1: logicSW-comportamento File: C:/DesComp/DesComp/Projeto2/logicaSWs.vhd Line: 19
-    Info (12023): Found entity 1: logicSW File: C:/DesComp/DesComp/Projeto2/logicaSWs.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file unidadecontroleula.vhd
-    Info (12022): Found design unit 1: UnidadeControleULA-comportamento File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 11
-    Info (12023): Found entity 1: UnidadeControleULA File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ula1bit.vhd
-    Info (12022): Found design unit 1: ULA1bit-comportamento File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 17
-    Info (12023): Found entity 1: ULA1bit File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file muxula.vhd
-    Info (12022): Found design unit 1: muxULA-comportamento File: C:/DesComp/DesComp/Projeto2/muxULA.vhd Line: 13
-    Info (12023): Found entity 1: muxULA File: C:/DesComp/DesComp/Projeto2/muxULA.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/buffer_3_state_1porta.vhd Line: 12
+    Info (12023): Found entity 1: buffer_3_state_1porta File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/buffer_3_state_1porta.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ULA.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA.vhd Line: 20
+    Info (12023): Found entity 1: ULA File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file estendeSinalGenerico.vhd
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/estendeSinalGenerico.vhd Line: 4
+Info (12021): Found 3 design units, including 1 entities, in source file edgeDetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/edgeDetector.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file deslocadorGenerico.vhd
+    Info (12022): Found design unit 1: deslocadorGenerico-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/deslocadorGenerico.vhd Line: 18
+    Info (12023): Found entity 1: deslocadorGenerico File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/deslocadorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoReg.vhd
+    Info (12022): Found design unit 1: bancoReg-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/bancoReg.vhd Line: 30
+    Info (12023): Found entity 1: bancoReg File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/bancoReg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file UC.vhd
+    Info (12022): Found design unit 1: UC-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UC.vhd Line: 10
+    Info (12023): Found entity 1: UC File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UC.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file somadorGenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somadorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaConstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ROMMIPS.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ROMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registradorGenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file RAMMIPS.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Projeto2.vhd
+    Info (12022): Found design unit 1: Projeto2-arquitetura File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 32
+    Info (12023): Found entity 1: Projeto2 File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file logicaLEDS.vhd
+    Info (12022): Found design unit 1: logicLEDS-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaLEDS.vhd Line: 14
+    Info (12023): Found entity 1: logicLEDS File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaLEDS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file logicaKEYS.vhd
+    Info (12022): Found design unit 1: logicKeys-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaKEYS.vhd Line: 22
+    Info (12023): Found entity 1: logicKeys File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaKEYS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file logicaSWs.vhd
+    Info (12022): Found design unit 1: logicSW-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaSWs.vhd Line: 19
+    Info (12023): Found entity 1: logicSW File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/logicaSWs.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file UnidadeControleULA.vhd
+    Info (12022): Found design unit 1: UnidadeControleULA-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 11
+    Info (12023): Found entity 1: UnidadeControleULA File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ULA1bit.vhd
+    Info (12022): Found design unit 1: ULA1bit-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA1bit.vhd Line: 17
+    Info (12023): Found entity 1: ULA1bit File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA1bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxULA.vhd
+    Info (12022): Found design unit 1: muxULA-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxULA.vhd Line: 13
+    Info (12023): Found entity 1: muxULA File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somador1bit.vhd
-    Info (12022): Found design unit 1: somador1bit-comportamento File: C:/DesComp/DesComp/Projeto2/somador1bit.vhd Line: 15
-    Info (12023): Found entity 1: somador1bit File: C:/DesComp/DesComp/Projeto2/somador1bit.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file ulabit31.vhd
-    Info (12022): Found design unit 1: ULAbit31-comportamento File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 19
-    Info (12023): Found entity 1: ULAbit31 File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: somador1bit-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somador1bit.vhd Line: 15
+    Info (12023): Found entity 1: somador1bit File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/somador1bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ULAbit31.vhd
+    Info (12022): Found design unit 1: ULAbit31-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULAbit31.vhd Line: 19
+    Info (12023): Found entity 1: ULAbit31 File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULAbit31.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/conversorHex7Seg.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(16) File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 101
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PCounter" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 110
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 118
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 123
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_IN" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 128
-Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BANCO_REGISTRADORES" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 134
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_OUT" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 144
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 151
-Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA:ULA|ULA1bit:bit0" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 66
-Info (12128): Elaborating entity "muxULA" for hierarchy "ULA:ULA|ULA1bit:bit0|muxULA:muxA" File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 27
-Info (12128): Elaborating entity "somador1bit" for hierarchy "ULA:ULA|ULA1bit:bit0|somador1bit:somador" File: C:/DesComp/DesComp/Projeto2/ULA1bit.vhd Line: 38
-Info (12128): Elaborating entity "ULAbit31" for hierarchy "ULA:ULA|ULAbit31:bit31" File: C:/DesComp/DesComp/Projeto2/ULA.vhd Line: 128
-Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(25): object "muxAout" assigned a value but never read File: C:/DesComp/DesComp/Projeto2/ULAbit31.vhd Line: 25
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 169
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:EXTENSOR_SINAL" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 179
-Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 184
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 189
-Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER_PC" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 204
-Info (12128): Elaborating entity "UC" for hierarchy "UC:UC" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 210
-Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 214
-Info (10041): Inferred latch for "saida[0]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
-Info (10041): Inferred latch for "saida[1]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
-Info (10041): Inferred latch for "saida[2]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
-Info (10041): Inferred latch for "saida[3]" at UnidadeControleULA.vhd(24) File: C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd Line: 24
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_COMPONENTES" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 220
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 234
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(16) File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 16
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 103
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PCounter" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 112
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 120
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 125
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_IN" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 130
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BANCO_REGISTRADORES" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 136
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_OUT" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 146
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 153
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA:ULA|ULA1bit:bit0" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA.vhd Line: 69
+Info (12128): Elaborating entity "muxULA" for hierarchy "ULA:ULA|ULA1bit:bit0|muxULA:muxA" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA1bit.vhd Line: 27
+Info (12128): Elaborating entity "somador1bit" for hierarchy "ULA:ULA|ULA1bit:bit0|somador1bit:somador" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA1bit.vhd Line: 39
+Info (12128): Elaborating entity "ULAbit31" for hierarchy "ULA:ULA|ULAbit31:bit31" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULA.vhd Line: 131
+Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(25): object "muxAout" assigned a value but never read File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULAbit31.vhd Line: 25
+Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(27): object "somadorOut" assigned a value but never read File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ULAbit31.vhd Line: 27
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 171
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:EXTENSOR_SINAL" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 181
+Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 186
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 191
+Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER_PC" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 206
+Info (12128): Elaborating entity "UC" for hierarchy "UC:UC" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 212
+Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 216
+Info (10041): Inferred latch for "saida[0]" at UnidadeControleULA.vhd(24) File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 24
+Info (10041): Inferred latch for "saida[1]" at UnidadeControleULA.vhd(24) File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 24
+Info (10041): Inferred latch for "saida[2]" at UnidadeControleULA.vhd(24) File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 24
+Info (10041): Inferred latch for "saida[3]" at UnidadeControleULA.vhd(24) File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/UnidadeControleULA.vhd Line: 24
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_COMPONENTES" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 222
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 236
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 21
-    Info (276007): RAM logic "bancoReg:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: C:/DesComp/DesComp/Projeto2/bancoReg.vhd Line: 49
-    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd Line: 18
+    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 21
+    Info (276007): RAM logic "bancoReg:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/bancoReg.vhd Line: 49
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/ROMMIPS.vhd Line: 18
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
-    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[12]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[11]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[10]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[9]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[8]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[7]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[6]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[5]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[4]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[3]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[2]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[1]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[0]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[13]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[14]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[15]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[16]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[17]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[18]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[19]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[20]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[21]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[22]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[23]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[24]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[25]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[26]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[27]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[28]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[29]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[30]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
+    Warning (13049): Converted tri-state buffer "RAMMIPS:RAM|Dado_out[31]" feeding internal logic into a wire File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/RAMMIPS.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PC[0]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 13
-    Warning (13410): Pin "PC[1]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 13
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 16
+    Warning (13410): Pin "PC[0]" is stuck at GND File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 13
+    Warning (13410): Pin "PC[1]" is stuck at GND File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 13
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 16
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/DesComp/DesComp/Projeto2/Projeto2.vhd Line: 15
-Info (21057): Implemented 3648 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/will/Downloads/DesignComputadores/DesComp-main/Projeto2/Projeto2.vhd Line: 15
+Info (21057): Implemented 3603 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 116 output pins
-    Info (21061): Implemented 3517 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Fri May 19 17:10:02 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (21061): Implemented 3472 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
+    Info: Peak virtual memory: 511 megabytes
+    Info: Processing ended: Sat May 20 22:37:18 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 
