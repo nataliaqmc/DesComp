@@ -292,6 +292,12 @@ set_global_assignment -name VHDL_FILE Projeto2.vhd
 set_global_assignment -name VHDL_FILE logicaLEDS.vhd
 set_global_assignment -name VHDL_FILE logicaKEYS.vhd
 set_global_assignment -name VHDL_FILE logicaSWs.vhd
-set_global_assignment -name VHDL_FILE muxBooleano2x1.vhd
-set_global_assignment -name VHDL_FILE muxGenericoNx1.vhd
+set_global_assignment -name VHDL_FILE UnidadeControleULA.vhd
+set_global_assignment -name VHDL_FILE ULA1bit.vhd
+set_global_assignment -name VHDL_FILE muxULA.vhd
+set_global_assignment -name VHDL_FILE somador1bit.vhd
+set_global_assignment -name VHDL_FILE ULAbit31.vhd
+set_global_assignment -name VHDL_FILE muxGenerico4x1.vhd
+set_global_assignment -name VHDL_FILE conversorHex7Seg.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

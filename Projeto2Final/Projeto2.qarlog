@@ -1,0 +1,42 @@
+Quartus Prime Archive log --	C:/DesComp/DesComp/Projeto2/Projeto2.qarlog
+
+Archive:	C:/DesComp/DesComp/Projeto2/Projeto2.qar
+Date:		Mon May 22 12:58:31 2023
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/DesComp/DesComp/Projeto2/Projeto2.qpf
+C:/DesComp/DesComp/Projeto2/Projeto2.qsf
+C:/DesComp/DesComp/Projeto2/Projeto2.vhd
+C:/DesComp/DesComp/Projeto2/RAMMIPS.vhd
+C:/DesComp/DesComp/Projeto2/ROMMIPS.vhd
+C:/DesComp/DesComp/Projeto2/ROMcontent.mif
+C:/DesComp/DesComp/Projeto2/UC.vhd
+C:/DesComp/DesComp/Projeto2/ULA.vhd
+C:/DesComp/DesComp/Projeto2/ULA1bit.vhd
+C:/DesComp/DesComp/Projeto2/ULAbit31.vhd
+C:/DesComp/DesComp/Projeto2/UnidadeControleULA.vhd
+C:/DesComp/DesComp/Projeto2/Waveform.vwf
+C:/DesComp/DesComp/Projeto2/bancoReg.vhd
+C:/DesComp/DesComp/Projeto2/buffer_3_state_1porta.vhd
+C:/DesComp/DesComp/Projeto2/buffer_3_state_8portas.vhd
+C:/DesComp/DesComp/Projeto2/conversorHex7Seg.vhd
+C:/DesComp/DesComp/Projeto2/deslocadorGenerico.vhd
+C:/DesComp/DesComp/Projeto2/edgeDetector.vhd
+C:/DesComp/DesComp/Projeto2/estendeSinalGenerico.vhd
+C:/DesComp/DesComp/Projeto2/logicaKEYS.vhd
+C:/DesComp/DesComp/Projeto2/logicaLEDS.vhd
+C:/DesComp/DesComp/Projeto2/logicaSWs.vhd
+C:/DesComp/DesComp/Projeto2/muxGenerico2x1.vhd
+C:/DesComp/DesComp/Projeto2/muxGenerico4x1.vhd
+C:/DesComp/DesComp/Projeto2/muxULA.vhd
+C:/DesComp/DesComp/Projeto2/registradorBooleano.vhd
+C:/DesComp/DesComp/Projeto2/registradorGenerico.vhd
+C:/DesComp/DesComp/Projeto2/somaConstante.vhd
+C:/DesComp/DesComp/Projeto2/somador1bit.vhd
+C:/DesComp/DesComp/Projeto2/somadorGenerico.vhd
+c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 31 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

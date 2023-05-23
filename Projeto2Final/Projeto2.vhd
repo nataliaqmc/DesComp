@@ -22,6 +22,9 @@ entity Projeto2 is
 	 HEX5 : out std_logic_vector(6 downto 0);
 
 	 Saida_ULA_leitura	 : out std_logic_vector (larguraDados-1 downto 0)
+	 --TESTE
+	--entradaAmm: out std_logic_vector(31 downto 0);
+	 --entradaBmm: out std_logic_vector(31 downto 0)
 	 
   );
 end entity;
@@ -63,21 +66,18 @@ architecture arquitetura of Projeto2 is
 	signal funct : std_logic_vector (5 downto 0);
 	signal destino: std_logic_vector (25 downto 0);
 	signal habMUX_RtRd: std_logic;
+	signal habMUX_BeqJ: std_logic;
 	signal habEscritaReg: std_logic;
 	signal habMUX_RtIm: std_logic;
 	signal ctrlULA: std_logic_vector(3 downto 0);
+	signal ULAop: std_logic_vector(1 downto 0);
 	signal habMUX_ULA: std_logic;
 	signal BEQ: std_logic;
 	signal habLeituraMem: std_logic;
 	signal habEscritaMem: std_logic; 
-	signal habMUX_BeqJ: std_logic;
-	signal habMUX_JR  : std_logic;
-	signal controle: std_logic_vector(11 downto 0);
-	signal ori_andi: std_logic;
-	signal tipo_R: std_logic;
-	
-	signal Flag_AND: std_logic;
-	signal Flag_OR : std_logic;		
+	signal controle: std_logic_vector(9 downto 0);
+	signal Flag_BEQ: std_logic;
+		
 	--RAM:
 	signal saidaRAM :  std_logic_vector (31 downto 0);
 	signal saidaShifter :  std_logic_vector (31 downto 0);
@@ -89,10 +89,8 @@ architecture arquitetura of Projeto2 is
 	signal mux_RtIm_out : std_logic_vector (31 downto 0);
 	signal mux_ULA_out  : std_logic_vector (31 downto 0);
 	signal mux_ImPC_out : std_logic_vector (31 downto 0);
-	signal mux_OR_out   : std_logic;
 	signal destinoShift : std_logic_vector (25 downto 0);
 	signal mux_displays : std_logic_vector (31 downto 0);
-	signal mux_BeqJ_out : std_logic_vector (31 downto 0);
 	
 	signal LEDS: std_logic_vector(9  downto 0);
 begin
@@ -115,7 +113,7 @@ end generate;
 PCounter : entity work.registradorGenerico  generic map (larguraDados => larguraEnderecos)
           port map (DIN => PC_IN,
 						  DOUT => PC_OUT, 
-						  ENABLE => '1',
+					  ENABLE => '1',
 						  CLK => CLK, 
 						  RST => '0');
 
@@ -156,15 +154,15 @@ MUX_REG_OUT : entity work.muxGenerico2x1  generic map (larguraDados => 32)
 ULA : entity work.ULA  generic map(larguraDados => larguraDados)
           port map (entradaA => ULA_A,
 						  entradaB => ULA_B,
-						  saida => Saida_ULA, 
+						  saida => Saida_ULA,
+						  inverteA =>ctrlULA(3),
+						  inverteB => ctrlULA(2),
 						  flagEQ => flagULA,
-						  seletor => ctrlULA);
+						  seletor => ctrlULA(1 downto 0));
 
-MUX_ULA : entity work.muxGenericoNx1  generic map (larguraEntrada => 32, larguraSelecao => 2, invertido => FALSE)
+MUX_ULA : entity work.muxGenerico2x1  generic map (larguraDados => 32)
 			 port map (entradaA_MUX => Saida_ULA,
-						  entradaB_MUX => saidaRAM,
-						  entradaC_MUX => saidaIncrementaPC,
-						  entradaD_MUX => LUI_out, 
+						  entradaB_MUX => saidaRAM, 
 						  seletor_MUX  => habMUX_ULA,
 						  saida_MUX    => mux_ULA_out);
 
@@ -196,48 +194,91 @@ SOMADOR: entity work.somadorGenerico generic map (	larguraDados => 32)
 						  entradaB => saidaShifter,
 						  saida => saidaSomador); 
 -- Muxs:
-MUX_AND : entity work.muxGenerico2x1 generic map (larguraDados => 32)
+MUX_BEQ : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => saidaIncrementaPC,
 						  entradaB_MUX => saidaSomador,
-						  seletor_MUX => Flag_AND,
+						  seletor_MUX => Flag_BEQ,
 						  saida_MUX => mux_ImPC_out);
-MUX_OR : entity work.muxBooleano2x1 
-			 port map (entradaA_MUX => not flagULA,
-						  entradaB_MUX => flagULA,
-						  seletor_MUX => Flag_OR,
-						  saida_MUX => mux_OR_out);
 MUX_PC_BEQ_JMP : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => mux_ImPC_out,
 						  entradaB_MUX => enderecoJ, 
 						  seletor_MUX => habMUX_BeqJ, 
-						  saida_MUX => mux_BeqJ_out);
+						  saida_MUX => proxPC);
 SHIFTER_PC : entity work.deslocadorGenerico generic map(larguraDado => 26)
 			 port map (shifter_IN => destino,
 						  shifter_OUT => destinoShift);
 			
-MUX_JR : entity work.muxGenerico2x1 generic map (larguraDados => 32)
-			 port map (entradaA_MUX => mux_BeqJ_out,
-						  entradaB_MUX => Rs_out,
-						  seletor_MUX => habMUX_JR,
-						  saida_MUX => proxPC);
 						  
 -- Unidade de Controle do Fluxo de dados:			 
 UC : entity work.UC  
           port map (opCode => opCode,
-						  funct => funct,
 						  saida => controle);
+-- Unidade de Controle da ULA:			 
+UC_ULA : entity work.UnidadeControleULA  
+          port map (funct => funct,
+						  ULAop => ULAop, 
+						  saida => ctrlULA);
 
 -- Verificação do funcionamento:
-MUX_COMPONENTES : entity work.muxGenerico2x1 generic map (larguraDados => 32)
+MUX_COMPONENTES : entity work.muxGenerico4x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => PC_OUT,
 						  entradaB_MUX => Saida_ULA,
-						  seletor_MUX => SW(9),
+						  entradaC_MUX =>ULA_A,
+						  entradaD_MUX => ULA_B,
+						  seletor_MUX => SW(1 downto 0),
 						  saida_MUX => mux_displays);
 
-LED: entity work.logicLEDS generic map (larguraDados => 10)
-			 port map (CLK => CLK,
-						  Data_IN => mux_displays,
-						  LEDR => LEDS);
+--LED: entity work.logicLEDS generic map (larguraDados => 10)
+--			 port map (CLK => CLK,
+--						  Data_IN => mux_displays,
+--						  LEDR => LEDS);
+						  
+						  
+HEX_0 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(3 downto 0),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX0);
+						 		  
+HEX_1 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(7 downto 4),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX1);
+					  
+HEX_2 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(11 downto 8),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX2);
+					  
+HEX_3 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(15 downto 12),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX3);
+
+					  
+HEX_4 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(19 downto 16),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX4);
+
+HEX_5 :  entity work.conversorHex7Seg
+        port map(dadoHex => mux_displays(23 downto 20),
+                 apaga => '0' ,
+                 negativo => '0',
+                 overFlow =>  '0',
+                 saida7seg => HEX5);
+						 		  
+LEDR(3 downto 0) <= mux_displays(27 downto 24);
+LEDR(7 downto 4) <= mux_displays(31 downto 28);
 						 		  
 -- Definindo os valores das instruções:
 opCode   <= dadoROM (31 downto 26);
@@ -252,26 +293,18 @@ PC_IN <= proxPC;
 ULA_A <= Rs_out;
 ULA_B <= mux_RtIm_out;
 -- Saída da unidade de controle:
-habMUX_JR     <= controle(12);
-habMUX_BeqJ   <= controle(11);
-habMUX_RtRd   <= controle(10);
-ori_andi      <= controle(9);
-habEscritaReg <= controle(8);
-habMUX_RtIm   <= controle(7);
-tipo_R        <= controle(6);
-habMUX_ULA    <= controle(5 downto 4);
-BEQ           <= controle(3);
-BNE           <= controle(2);
+habMUX_BeqJ   <= controle(9);
+habMUX_RtRd   <= controle(8);
+habEscritaReg <= controle(7);
+habMUX_RtIm   <= controle(6);
+ULAop     	  <= controle(5 downto 4);
+habMUX_ULA    <= controle(3);
+BEQ           <= controle(2);
 habLeituraMem <= controle(1);
 habEscritaMem <= controle(0);
 
-
--- Definindo o "OR":
-Flag_OR <= BEQ or BNE;
-
--- Definindo o "AND":
-Flag_AND <= Flag_OR and mux_OR_out;
-
+-- Definindo o "AND" do BEQ:
+Flag_BEQ <= BEQ and flagULA;
 
 -- Definindo o (PC + 4[31~28],Instr[25~0],0,0):
 enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
@@ -281,14 +314,6 @@ PC <= EnderecoROM;
 Saida_ULA_leitura	<=Saida_ULA;
 
 
-HEX0 <= not mux_displays(6 downto 0);
-HEX1 <= not mux_displays(13 downto 7);
-HEX2 <= not mux_displays(20 downto 14);
-HEX3 <= not mux_displays(27 downto 21);
-HEX4 <= not mux_displays(31 downto 28) & "111";
-HEX5 <= "1111111";
-
-LEDR <= LEDS;
 
 
 end architecture;
