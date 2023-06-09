@@ -3,7 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity UnidadeControleULA is
   port ( funct : in std_logic_vector(5 downto 0);
-			ULAop : in std_logic_vector(1 downto 0);
+			opcode: in std_logic_vector(5 downto 0);
+			tipoR : in std_logic;
          saida : out std_logic_vector(3 downto 0)
   );
 end entity;
@@ -15,18 +16,33 @@ architecture comportamento of UnidadeControleULA is
   constant OROP  : std_logic_vector(5 downto 0) := 6x"25";
   constant SLT   : std_logic_vector(5 downto 0) := 6x"2a";
   
-  constant Rinstr: std_logic_vector(1 downto 0) := "00";
   constant LW    : std_logic_vector(1 downto 0) := "01";
   constant SW    : std_logic_vector(1 downto 0) := "10";
   constant BEQ   : std_logic_vector(1 downto 0) := "11";
+  
+  constant LUI   : std_logic_vector(5 downto 0) := 6x"f";
+  constant ADDI  : std_logic_vector(5 downto 0) := 6x"8";
+  constant ANDI  : std_logic_vector(5 downto 0) := 6x"c";
+  constant ORI   : std_logic_vector(5 downto 0) := 6x"d";
+  constant SLTI  : std_logic_vector(5 downto 0) := 6x"a";
+  constant BNE   : std_logic_vector(5 downto 0) := 6x"5";
+  constant JAL   : std_logic_vector(5 downto 0) := 6x"3";
+  constant JR    : std_logic_vector(5 downto 0) := 6x"08";
     
   begin
-saida <= "0000" when (funct = ANDOP and ULAop = Rinstr) else
-         "0001" when (funct = OROP  and ULAop = Rinstr) else
-			"0010" when (funct = ADD   and ULAop = Rinstr) else
-			"0110" when (funct = SUB   and ULAop = Rinstr) else
-			"0111" when (funct = SLT   and ULAop = Rinstr) else
-			"0010" when (ULAop = LW) else
-			"0010" when (ULAop = SW)  else
-			"0110" when (ULAop = BEQ);  
+saida <= "0000" when (funct = ANDOP and tipoR = '1') else
+         "0001" when (funct = OROP  and tipoR = '1') else
+			"0010" when (funct = ADD   and tipoR = '1') else
+			"0110" when (funct = SUB   and tipoR = '1') else
+			"0111" when (funct = SLT   and tipoR = '1') else
+			"0010" when (opcode = LW   and tipoR = '0') else
+			"0010" when (opcode = SW   and tipoR = '0') else
+			"0010" when (opcode = BEQ  and tipoR = '0') else
+			"0010" when (opcode = LUI  and tipoR = '0') else
+			"0010" when (opcode = ADDI and tipoR = '0') else
+			"0000" when (opcode = ANDI and tipoR = '0') else
+			"0001" when (opcode = ORI  and tipoR = '0') else
+			"0111" when (opcode = SLTI and tipoR = '0') else
+			"0110" when (opcode = BNE  and tipoR = '0') else
+			"0110" when (opcode = BEQ  and tipoR = '0');  
 end architecture;

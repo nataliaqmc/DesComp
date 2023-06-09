@@ -23,7 +23,7 @@ entity Projeto2 is
 
 	 Saida_ULA_leitura	 : out std_logic_vector (larguraDados-1 downto 0)
 	 --TESTE
-	--entradaAmm: out std_logic_vector(31 downto 0);
+	 --entradaAmm: out std_logic_vector(31 downto 0);
 	 --entradaBmm: out std_logic_vector(31 downto 0)
 	 
   );
@@ -65,17 +65,17 @@ architecture arquitetura of Projeto2 is
 	signal opCode : std_logic_vector (5 downto 0);
 	signal funct : std_logic_vector (5 downto 0);
 	signal destino: std_logic_vector (25 downto 0);
-	signal habMUX_RtRd: std_logic;
+	signal habMUX_RtRd: std_logic_vector(1 downto 0);
 	signal habMUX_BeqJ: std_logic;
 	signal habEscritaReg: std_logic;
 	signal habMUX_RtIm: std_logic;
 	signal ctrlULA: std_logic_vector(3 downto 0);
 	signal ULAop: std_logic_vector(1 downto 0);
-	signal habMUX_ULA: std_logic;
+	signal habMUX_ULA: std_logic_vector(1 downto 0);
 	signal BEQ: std_logic;
 	signal habLeituraMem: std_logic;
 	signal habEscritaMem: std_logic; 
-	signal controle: std_logic_vector(9 downto 0);
+	signal controle: std_logic_vector(13 downto 0);
 	signal Flag_BEQ: std_logic;
 		
 	--RAM:
@@ -91,6 +91,14 @@ architecture arquitetura of Projeto2 is
 	signal mux_ImPC_out : std_logic_vector (31 downto 0);
 	signal destinoShift : std_logic_vector (25 downto 0);
 	signal mux_displays : std_logic_vector (31 downto 0);
+	signal mux_FLAG_out : std_logic;
+	signal lui_out      : std_logic_vector(31 downto 0);
+	signal saidaMuxJump : std_logic_vector(31 downto 0);
+	signal habMUX_JRJ   : std_logic;
+	signal hab_tipoR    : std_logic;
+	signal hab_ORI_ANDI : std_logic;
+	signal BNE          : std_logic;
+	signal BNE_or_BEQ   : std_logic;
 	
 	signal LEDS: std_logic_vector(9  downto 0);
 begin
@@ -113,7 +121,7 @@ end generate;
 PCounter : entity work.registradorGenerico  generic map (larguraDados => larguraEnderecos)
           port map (DIN => PC_IN,
 						  DOUT => PC_OUT, 
-					  ENABLE => '1',
+						  ENABLE => '1',
 						  CLK => CLK, 
 						  RST => '0');
 
@@ -128,9 +136,11 @@ ROM : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidt
 						  Dado => dadoROM);
 			 
 -- Banco de registradores:
-MUX_REG_IN : entity work.muxGenerico2x1		generic map	(larguraDados => 5)
+MUX_REG_IN : entity work.muxGenerico4x1		generic map	(larguraDados => 5)
 			 port map (entradaA_MUX => Rt,
 						  entradaB_MUX => Rd,
+						  entradaC_MUX => Rd,
+						  entradaD_MUX => Rd,
 						  seletor_MUX => habMUX_RtRd,
 						  saida_MUX => mux_RtRd_out);
 
@@ -158,11 +168,18 @@ ULA : entity work.ULA  generic map(larguraDados => larguraDados)
 						  inverteA =>ctrlULA(3),
 						  inverteB => ctrlULA(2),
 						  flagEQ => flagULA,
-						  seletor => ctrlULA(1 downto 0));
-
-MUX_ULA : entity work.muxGenerico2x1  generic map (larguraDados => 32)
+						  seletor => ctrlULA(3 downto 0));
+MUX_FLAG: entity work.muxULA
+			 port map (entradaA_MUX => not flagULA,
+						  entradaB_MUX => flagULA, 
+						  seletor_MUX  => BEQ,
+						  saida_MUX    => mux_FLAG_out); 
+						  
+MUX_ULA : entity work.muxGenerico4x1  generic map (larguraDados => 32)
 			 port map (entradaA_MUX => Saida_ULA,
 						  entradaB_MUX => saidaRAM, 
+						  entradaC_MUX => saidaIncrementaPC,
+						  entradaD_MUX => lui_out,
 						  seletor_MUX  => habMUX_ULA,
 						  saida_MUX    => mux_ULA_out);
 
@@ -182,7 +199,9 @@ RAM : entity work.RAMMIPS generic map(dataWidth => 32, addrWidth => 32, memoryAd
 EXTENSOR_SINAL : entity work.estendeSinalGenerico generic map(larguraDadoEntrada => 16, larguraDadoSaida => 32)
 			 port map (estendeSinal_IN => imediato,
 						  estendeSinal_OUT => saidaExtensor);
-
+LUI_OP: entity work.LUI
+			 port map (entrada => imediato,
+						  saida => lui_out); 
 -- Desloca o imediato estendido:	
 SHIFTER : entity work.deslocadorGenerico generic map(larguraDado => 32)
 			 port map (shifter_IN => saidaExtensor,
@@ -203,6 +222,11 @@ MUX_PC_BEQ_JMP : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => mux_ImPC_out,
 						  entradaB_MUX => enderecoJ, 
 						  seletor_MUX => habMUX_BeqJ, 
+						  saida_MUX => saidaMuxJump);
+MUX_JR : entity work.muxGenerico2x1 generic map (larguraDados => 32)
+			 port map (entradaA_MUX => saidaMuxJump,
+						  entradaB_MUX => Rs_out, 
+						  seletor_MUX => habMUX_JRJ, 
 						  saida_MUX => proxPC);
 SHIFTER_PC : entity work.deslocadorGenerico generic map(larguraDado => 26)
 			 port map (shifter_IN => destino,
@@ -212,11 +236,13 @@ SHIFTER_PC : entity work.deslocadorGenerico generic map(larguraDado => 26)
 -- Unidade de Controle do Fluxo de dados:			 
 UC : entity work.UC  
           port map (opCode => opCode,
+						  funct => funct,
 						  saida => controle);
 -- Unidade de Controle da ULA:			 
 UC_ULA : entity work.UnidadeControleULA  
           port map (funct => funct,
-						  ULAop => ULAop, 
+						  opcode => opcode, 
+						  tipoR => hab_tipoR,
 						  saida => ctrlULA);
 
 -- Verificação do funcionamento:
@@ -289,22 +315,31 @@ imediato <= dadoROM (15 downto 0);
 funct    <= dadoROM (5 downto 0);
 destino  <= dadoROM (25 downto 0);
  
+
 PC_IN <= proxPC;
 ULA_A <= Rs_out;
 ULA_B <= mux_RtIm_out;
--- Saída da unidade de controle:
-habMUX_BeqJ   <= controle(9);
-habMUX_RtRd   <= controle(8);
-habEscritaReg <= controle(7);
-habMUX_RtIm   <= controle(6);
-ULAop     	  <= controle(5 downto 4);
-habMUX_ULA    <= controle(3);
-BEQ           <= controle(2);
+
+
+-- Saída da unidade de controle (14 downto 0):
+habMUX_JRJ    <= controle(13);
+habMUX_BeqJ   <= controle(12);
+habMUX_RtRd   <= controle(11 downto 10);
+hab_ORI_ANDI  <= controle(9);
+habEscritaReg <= controle(8);
+habMUX_RtIm   <= controle(7);
+hab_tipoR     <= controle(6);
+habMUX_ULA    <= controle(5 downto 4);
+BEQ           <= controle(3);
+BNE           <= controle(2);
 habLeituraMem <= controle(1);
 habEscritaMem <= controle(0);
 
+
+-- Definindo o "OR" do BEQ e BNE:
+BNE_or_BEQ <= BEQ or BNE;
 -- Definindo o "AND" do BEQ:
-Flag_BEQ <= BEQ and flagULA;
+Flag_BEQ <= mux_FLAG_out and BNE_or_BEQ;
 
 -- Definindo o (PC + 4[31~28],Instr[25~0],0,0):
 enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
