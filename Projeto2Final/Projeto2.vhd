@@ -168,7 +168,7 @@ ULA : entity work.ULA  generic map(larguraDados => larguraDados)
           port map (entradaA => ULA_A,
 						  entradaB => ULA_B,
 						  saida => Saida_ULA,
-						  inverteA =>ctrlULA(3),
+						  inverteA => '0',
 						  inverteB => ctrlULA(2),
 						  flagEQ => flagULA,
 						  seletor => ctrlULA(1 downto 0))
@@ -258,7 +258,7 @@ MUX_COMPONENTES : entity work.muxGenerico4x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => PC_OUT,
 						  entradaB_MUX => Saida_ULA,
 						  entradaC_MUX =>ULA_A,
-						  entradaD_MUX => ULA_B,
+						  entradaD_MUX => x"0000000" & ctrlULA,
 						  seletor_MUX => SW(1 downto 0),
 						  saida_MUX => mux_displays);
 

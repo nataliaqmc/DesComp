@@ -37,7 +37,6 @@ saida <= "0000" when (funct = ANDOP and tipoR = '1') else
 			"0111" when (funct = SLT   and tipoR = '1') else
 			"0010" when (opcode = LW   and tipoR = '0') else
 			"0010" when (opcode = SW   and tipoR = '0') else
-			"0010" when (opcode = BEQ  and tipoR = '0') else
 			"0010" when (opcode = LUI  and tipoR = '0') else
 			"0010" when (opcode = ADDI and tipoR = '0') else
 			"0000" when (opcode = ANDI and tipoR = '0') else
