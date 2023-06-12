@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jun 12 10:11:08 2023
+Fitter Status : Successful - Mon Jun 12 10:46:08 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Projeto2
 Top-level Entity Name : Projeto2
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1,951 / 18,480 ( 11 % )
-Total registers : 3235
+Logic utilization (in ALMs) : 1,917 / 18,480 ( 10 % )
+Total registers : 3232
 Total pins : 99 / 224 ( 44 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )

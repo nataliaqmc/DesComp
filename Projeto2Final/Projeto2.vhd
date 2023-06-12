@@ -236,6 +236,7 @@ MUX_JR : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 						  entradaB_MUX => Rs_out, 
 						  seletor_MUX => habMUX_JRJ, 
 						  saida_MUX => proxPC);
+						  
 SHIFTER_PC : entity work.deslocadorGenerico generic map(larguraDado => 26)
 			 port map (shifter_IN => destino,
 						  shifter_OUT => destinoShift);
@@ -257,8 +258,8 @@ UC_ULA : entity work.UnidadeControleULA
 MUX_COMPONENTES : entity work.muxGenerico4x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => PC_OUT,
 						  entradaB_MUX => Saida_ULA,
-						  entradaC_MUX =>ULA_A,
-						  entradaD_MUX => x"0000000" & ctrlULA,
+						  entradaC_MUX =>enderecoJ,
+						  entradaD_MUX => mux_ImPC_out,
 						  seletor_MUX => SW(1 downto 0),
 						  saida_MUX => mux_displays);
 
@@ -349,7 +350,11 @@ habEscritaMem <= controle(0);
 Flag_BEQ <= mux_FLAG_out and (BEQ or BNE);
 
 -- Definindo o (PC + 4[31~28],Instr[25~0],0,0):
-enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
+--enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
+
+enderecoJ <= SaidaincrementaPC(31 downto 28) & dadoROM(25 downto 0) & "00";
+
+
 EnderecoROM <= PC_OUT;				
 PC <= EnderecoROM;
 

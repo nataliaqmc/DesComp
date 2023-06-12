@@ -43,5 +43,8 @@ saida <= "0000" when (funct = ANDOP and tipoR = '1') else
 			"0001" when (opcode = ORI  and tipoR = '0') else
 			"0111" when (opcode = SLTI and tipoR = '0') else
 			"0110" when (opcode = BNE  and tipoR = '0') else
-			"0110" when (opcode = BEQ  and tipoR = '0');  
+			"0110" when (opcode = BEQ  and tipoR = '0') else
+			 "0000" when (opcode = JR and tipoR = '1') else
+			 "0000" when (opcode = JAL and tipoR = '0') 
+			 ;  
 end architecture;

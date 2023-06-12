@@ -47,7 +47,7 @@ architecture comportamento of UC is
 				'0'&'0'&"00"&'0'&'1'&'1'&'0'&"00"&'0'&'0'&'0'&'0' when (opCode = SLTI) else
 				'0'&'0'&"00"&'0'&'0'&'0'&'0'&"00"&'0'&'1'&'0'&'0' when (opCode = BNE) else
 				'0'&'1'&"10"&'0'&'1'&'0'&'0'&"10"&'0'&'0'&'0'&'0' when (opCode = JAL) else
-				'1'&'0'&"00"&'0'&'0'&'0'&'1'&"00"&'0'&'0'&'0'&'0' when (opCode = "000000" and funct = JR   ) else
+				'1'&'0'&"00"&'0'&'0'&'0'&'1'&"00"&'0'&'0'&'0'&'0' when (opCode = R_TYPE and funct = JR) else
 				
 				'0'&'0'&"01"&'0'&'1'&'0'&'1'&"00"&'0'&'0'&'0'&'0' when (opCode = R_TYPE   and funct = SOMA ) else
 				'0'&'0'&"01"&'0'&'1'&'0'&'1'&"00"&'0'&'0'&'0'&'0' when (opCode = R_TYPE   and funct = SUB  ) else
