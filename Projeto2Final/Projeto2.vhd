@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity Projeto2 is
+--entity Projeto2 is
   -- Total de bits das entradas e saidas
   generic (larguraDados : natural := 32;
 			  larguraEnderecos : natural := 32;

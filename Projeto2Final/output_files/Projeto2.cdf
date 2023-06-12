@@ -3,6 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
+	P ActionCode(Cfg)
+		Device PartName(5CEBA4F23) Path("/home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/output_files/") File("Projeto2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

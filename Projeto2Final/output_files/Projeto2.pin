@@ -79,15 +79,15 @@ GND                          : A1        :        :                   :         
 MSEL2                        : A2        :        :                   :         : 9A        :                
 VCCBAT                       : A3        : power  :                   : 1.2V    :           :                
 nCONFIG                      : A4        :        :                   :         : 9A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8A        :                
+PC[22]                       : A5        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : A6        : power  :                   : 2.5V    : 8A        :                
-Saida_ULA_leitura[31]        : A7        : output : 2.5 V             :         : 8A        : N              
-PC[18]                       : A8        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[13]        : A9        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[17]        : A10       : output : 2.5 V             :         : 8A        : N              
+PC[23]                       : A7        : output : 2.5 V             :         : 8A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8A        :                
+Saida_ULA_leitura[11]        : A9        : output : 2.5 V             :         : 8A        : N              
+PC[21]                       : A10       : output : 2.5 V             :         : 8A        : N              
 GND                          : A11       : gnd    :                   :         :           :                
-PC[15]                       : A12       : output : 2.5 V             :         : 7A        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 7A        :                
+PC[11]                       : A13       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 7A        :                
 VCCIO7A                      : A16       : power  :                   : 2.5V    : 7A        :                
@@ -145,13 +145,13 @@ GND                          : B1        : gnd    :                   :         
 GND                          : B2        : gnd    :                   :         :           :                
 DNU                          : B3        :        :                   :         :           :                
 DNU                          : B4        :        :                   :         :           :                
-PC[13]                       : B5        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[28]        : B6        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[14]        : B7        : output : 2.5 V             :         : 8A        : N              
+PC[15]                       : B5        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[25]        : B6        : output : 2.5 V             :         : 8A        : N              
+PC[8]                        : B7        : output : 2.5 V             :         : 8A        : N              
 VREFB8AN0                    : B8        : power  :                   :         : 8A        :                
 GND                          : B9        : gnd    :                   :         :           :                
-PC[29]                       : B10       : output : 2.5 V             :         : 8A        : N              
-PC[23]                       : B11       : output : 2.5 V             :         : 7A        : N              
+PC[14]                       : B10       : output : 2.5 V             :         : 8A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B13       :        :                   :         : 7A        :                
 GND                          : B14       : gnd    :                   :         :           :                
@@ -168,14 +168,14 @@ HEX5[5]                      : C2        : output : 3.3-V LVTTL       :         
 GND                          : C3        : gnd    :                   :         :           :                
 GND                          : C4        : gnd    :                   :         :           :                
 GND                          : C5        :        :                   :         : 9A        :                
-Saida_ULA_leitura[25]        : C6        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[26]        : C6        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : C7        : power  :                   : 2.5V    : 8A        :                
-Saida_ULA_leitura[29]        : C8        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[15]        : C9        : output : 2.5 V             :         : 8A        : N              
+PC[27]                       : C8        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[10]        : C9        : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : C10       : power  :                   : 2.5V    : 7A, 8A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 7A        :                
 VCCIO7A                      : C12       : power  :                   : 2.5V    : 7A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7A        :                
+Saida_ULA_leitura[14]        : C13       : output : 2.5 V             :         : 7A        : N              
 VREFB7AN0                    : C14       : power  :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 7A        :                
@@ -190,14 +190,14 @@ GND                          : D2        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 2A        :                
 VCCIO2A                      : D4        : power  :                   : 3.3V    : 2A        :                
 GND                          : D5        : gnd    :                   :         :           :                
-Saida_ULA_leitura[18]        : D6        : output : 2.5 V             :         : 8A        : N              
-PC[20]                       : D7        : output : 2.5 V             :         : 8A        : N              
+PC[0]                        : D6        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[0]         : D7        : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : D8        : power  :                   : 2.5V    : 7A, 8A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8A        :                
 GND                          : D10       : gnd    :                   :         :           :                
 VCC_AUX                      : D11       : power  :                   : 2.5V    :           :                
-PC[4]                        : D12       : output : 2.5 V             :         : 7A        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7A        :                
+PC[19]                       : D12       : output : 2.5 V             :         : 7A        : N              
+Saida_ULA_leitura[19]        : D13       : output : 2.5 V             :         : 7A        : N              
 VCCPD7A8A                    : D14       : power  :                   : 2.5V    : 7A, 8A    :                
 VCCIO7A                      : D15       : power  :                   : 2.5V    : 7A        :                
 VCCPD7A8A                    : D16       : power  :                   : 2.5V    : 7A, 8A    :                
@@ -213,10 +213,10 @@ GND                          : E3        : gnd    :                   :         
 GND                          : E4        : gnd    :                   :         :           :                
 MSEL3                        : E5        :        :                   :         : 9A        :                
 VCC_AUX                      : E6        : power  :                   : 2.5V    :           :                
-PC[10]                       : E7        : output : 2.5 V             :         : 8A        : N              
+PC[26]                       : E7        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : E8        : power  :                   : 2.5V    : 8A        :                
-PC[31]                       : E9        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[10]        : E10       : output : 2.5 V             :         : 8A        : N              
+PC[30]                       : E9        : output : 2.5 V             :         : 8A        : N              
+PC[2]                        : E10       : output : 2.5 V             :         : 8A        : N              
 VCCPD7A8A                    : E11       : power  :                   : 2.5V    : 7A, 8A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 7A        :                
 GND                          : E13       : gnd    :                   :         :           :                
@@ -235,12 +235,12 @@ MSEL4                        : F3        :        :                   :         
 VCCA_FPLL                    : F4        : power  :                   : 2.5V    :           :                
 GND                          : F5        : gnd    :                   :         :           :                
 GND                          : F6        : gnd    :                   :         :           :                
-Saida_ULA_leitura[27]        : F7        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[21]        : F7        : output : 2.5 V             :         : 8A        : N              
 VCCPGM                       : F8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
-PC[26]                       : F9        : output : 2.5 V             :         : 8A        : N              
+PC[16]                       : F9        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8A        :                
 VCCIO7A                      : F11       : power  :                   : 2.5V    : 7A        :                
-PC[11]                       : F12       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 7A        :                
@@ -256,13 +256,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :      
 GND                          : G3        : gnd    :                   :         :           :                
 GND                          : G4        : gnd    :                   :         :           :                
 nCE                          : G5        :        :                   :         : 9A        :                
-PC[28]                       : G6        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[23]        : G6        : output : 2.5 V             :         : 8A        : N              
 VCCIO8A                      : G7        : power  :                   : 2.5V    : 8A        :                
-PC[16]                       : G8        : output : 2.5 V             :         : 8A        : N              
+PC[3]                        : G8        : output : 2.5 V             :         : 8A        : N              
 GND                          : G9        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8A        :                
+Saida_ULA_leitura[15]        : G10       : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 7A        :                
-Saida_ULA_leitura[2]         : G12       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G13       :        :                   :         : 7A        :                
 VCCIO7A                      : G14       : power  :                   : 2.5V    : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 7A        :                
@@ -278,14 +278,14 @@ GND                          : H2        : gnd    :                   :         
 GND                          : H3        : gnd    :                   :         :           :                
 GND                          : H4        : gnd    :                   :         :           :                
 nSTATUS                      : H5        :        :                   :         : 9A        :                
-PC[25]                       : H6        : output : 2.5 V             :         : 8A        : N              
+PC[24]                       : H6        : output : 2.5 V             :         : 8A        : N              
 GND                          : H7        : gnd    :                   :         :           :                
-Saida_ULA_leitura[11]        : H8        : output : 2.5 V             :         : 8A        : N              
-Saida_ULA_leitura[23]        : H9        : output : 2.5 V             :         : 8A        : N              
+PC[12]                       : H8        : output : 2.5 V             :         : 8A        : N              
+PC[9]                        : H9        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 7A        :                
 GND                          : H12       : gnd    :                   :         :           :                
-PC[6]                        : H13       : output : 2.5 V             :         : 7A        : N              
+Saida_ULA_leitura[16]        : H13       : output : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 7A        :                
@@ -301,11 +301,11 @@ GND                          : J3        : gnd    :                   :         
 VCC                          : J4        : power  :                   : 1.1V    :           :                
 GND                          : J5        : gnd    :                   :         :           :                
 MSEL1                        : J6        :        :                   :         : 9A        :                
-PC[30]                       : J7        : output : 2.5 V             :         : 8A        : N              
-PC[0]                        : J8        : output : 2.5 V             :         : 8A        : N              
-PC[1]                        : J9        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[9]         : J7        : output : 2.5 V             :         : 8A        : N              
+PC[18]                       : J8        : output : 2.5 V             :         : 8A        : N              
+Saida_ULA_leitura[31]        : J9        : output : 2.5 V             :         : 8A        : N              
 VCC                          : J10       : power  :                   : 1.1V    :           :                
-Saida_ULA_leitura[22]        : J11       : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J11       :        :                   :         : 7A        :                
 VCC                          : J12       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 7A        :                
 VCC                          : J14       : power  :                   : 1.1V    :           :                
@@ -323,9 +323,9 @@ VCC                          : K3        : power  :                   : 1.1V    
 GND                          : K4        : gnd    :                   :         :           :                
 VCC                          : K5        : power  :                   : 1.1V    :           :                
 CONF_DONE                    : K6        :        :                   :         : 9A        :                
-PC[8]                        : K7        : output : 2.5 V             :         : 8A        : N              
+PC[17]                       : K7        : output : 2.5 V             :         : 8A        : N              
 GND                          : K8        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K9        :        :                   :         : 7A        :                
+Saida_ULA_leitura[17]        : K9        : output : 2.5 V             :         : 7A        : N              
 GND                          : K10       : gnd    :                   :         :           :                
 VCC                          : K11       : power  :                   : 1.1V    :           :                
 GND                          : K12       : gnd    :                   :         :           :                
@@ -346,7 +346,7 @@ VCC                          : L4        : power  :                   : 1.1V    
 GND                          : L5        : gnd    :                   :         :           :                
 MSEL0                        : L6        :        :                   :         : 9A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 8A        :                
-PC[14]                       : L8        : output : 2.5 V             :         : 7A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 7A        :                
 DNU                          : L9        :        :                   :         :           :                
 VCC                          : L10       : power  :                   : 1.1V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -357,10 +357,10 @@ GND                          : L15       : gnd    :                   :         
 VCC                          : L16       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L17       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 5B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L19       :        :                   :         : 5B        :                
+Saida_ULA_leitura[28]        : L19       : output : 2.5 V             :         : 5B        : N              
 VREFB5BN0                    : L20       : power  :                   :         : 5B        :                
 GND                          : L21       : gnd    :                   :         :           :                
-Saida_ULA_leitura[12]        : L22       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 5B        :                
 GND                          : M1        : gnd    :                   :         :           :                
 GND                          : M2        : gnd    :                   :         :           :                
 VCCA_FPLL                    : M3        : power  :                   : 2.5V    :           :                
@@ -378,7 +378,7 @@ GND                          : M14       : gnd    :                   :         
 VCC                          : M15       : power  :                   : 1.1V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M16       :        :                   :         : 5B        :                
 VCCPD5B                      : M17       : power  :                   : 2.5V    : 5B        :                
-Saida_ULA_leitura[7]         : M18       : output : 2.5 V             :         : 5B        : N              
+PC[5]                        : M18       : output : 2.5 V             :         : 5B        : N              
 VCCIO5B                      : M19       : power  :                   : 2.5V    : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M20       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 5B        :                
@@ -388,7 +388,7 @@ LEDR[4]                      : N2        : output : 3.3-V LVTTL       :         
 GND                          : N3        : gnd    :                   :         :           :                
 VCC                          : N4        : power  :                   : 1.1V    :           :                
 GND                          : N5        : gnd    :                   :         :           :                
-Saida_ULA_leitura[20]        : N6        : output : 2.5 V             :         : 3A        : N              
+PC[31]                       : N6        : output : 2.5 V             :         : 3A        : N              
 GND                          : N7        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 3B        :                
 HEX5[0]                      : N9        : output : 3.3-V LVTTL       :         : 3B        : Y              
@@ -398,20 +398,20 @@ VCC                          : N12       : power  :                   : 1.1V    
 GND                          : N13       : gnd    :                   :         :           :                
 VCC                          : N14       : power  :                   : 1.1V    :           :                
 GND                          : N15       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N16       :        :                   :         : 5B        :                
+PC[4]                        : N16       : output : 2.5 V             :         : 5B        : N              
 GND                          : N17       : gnd    :                   :         :           :                
 VCCPD5B                      : N18       : power  :                   : 2.5V    : 5B        :                
-Saida_ULA_leitura[3]         : N19       : output : 2.5 V             :         : 5B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N19       :        :                   :         : 5B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N20       :        :                   :         : 5B        :                
-Saida_ULA_leitura[6]         : N21       : output : 2.5 V             :         : 5B        : N              
+PC[25]                       : N21       : output : 2.5 V             :         : 5B        : N              
 GND                          : N22       : gnd    :                   :         :           :                
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                
 VCC                          : P3        : power  :                   : 1.1V    :           :                
 GND                          : P4        : gnd    :                   :         :           :                
 TMS                          : P5        : input  :                   :         : 3A        :                
-PC[7]                        : P6        : output : 2.5 V             :         : 3A        : N              
-PC[2]                        : P7        : output : 2.5 V             :         : 3A        : N              
+Saida_ULA_leitura[6]         : P6        : output : 2.5 V             :         : 3A        : N              
+Saida_ULA_leitura[12]        : P7        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3B        :                
 HEX4[6]                      : P9        : output : 3.3-V LVTTL       :         : 3B        : Y              
 GND                          : P10       : gnd    :                   :         :           :                
@@ -420,10 +420,10 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :      
 VCC                          : P13       : power  :                   : 1.1V    :           :                
 HEX5[3]                      : P14       : output : 3.3-V LVTTL       :         : 4A        : Y              
 VCC                          : P15       : power  :                   : 1.1V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5A        :                
-Saida_ULA_leitura[19]        : P17       : output : 2.5 V             :         : 5A        : N              
-PC[24]                       : P18       : output : 2.5 V             :         : 5A        : N              
-Saida_ULA_leitura[4]         : P19       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[30]        : P16       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[4]         : P17       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[7]         : P18       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[27]        : P19       : output : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : P20       : power  :                   : 2.5V    : 5A        :                
 VCCPD5A                      : P21       : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P22       :        :                   :         : 5A        :                
@@ -431,9 +431,9 @@ VCCIO2A                      : R1        : power  :                   : 3.3V    
 VCCPD1A2A                    : R2        : power  :                   : 3.3V    : 1A, 2A    :                
 GND                          : R3        : gnd    :                   :         :           :                
 nCSO, DATA4                  : R4        :        :                   :         : 3A        :                
-PC[22]                       : R5        : output : 2.5 V             :         : 3A        : N              
-Saida_ULA_leitura[30]        : R6        : output : 2.5 V             :         : 3A        : N              
-PC[5]                        : R7        : output : 2.5 V             :         : 3A        : N              
+PC[28]                       : R5        : output : 2.5 V             :         : 3A        : N              
+PC[29]                       : R6        : output : 2.5 V             :         : 3A        : N              
+PC[13]                       : R7        : output : 2.5 V             :         : 3A        : N              
 VCCIO3B                      : R8        : power  :                   : 3.3V    : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3B        :                
@@ -441,44 +441,44 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 3B        :                
 GND                          : R13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4A        :                
-PC[17]                       : R15       : output : 2.5 V             :         : 5A        : N              
-PC[12]                       : R16       : output : 2.5 V             :         : 5A        : N              
-Saida_ULA_leitura[16]        : R17       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[3]         : R15       : output : 2.5 V             :         : 5A        : N              
+PC[7]                        : R16       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[5]         : R17       : output : 2.5 V             :         : 5A        : N              
 VCCIO5A                      : R18       : power  :                   : 2.5V    : 5A        :                
 VCCPGM                       : R19       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 VREFB5AN0                    : R20       : power  :                   :         : 5A        :                
-Saida_ULA_leitura[5]         : R21       : output : 2.5 V             :         : 5A        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R22       :        :                   :         : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5A        :                
+Saida_ULA_leitura[2]         : R22       : output : 2.5 V             :         : 5A        : N              
 GND                          : T1        : gnd    :                   :         :           :                
 GND                          : T2        : gnd    :                   :         :           :                
 VCCA_FPLL                    : T3        : power  :                   : 2.5V    :           :                
 AS_DATA3, DATA3              : T4        :        :                   :         : 3A        :                
 VCCA_FPLL                    : T5        : power  :                   : 2.5V    :           :                
 VCCIO3A                      : T6        : power  :                   : 2.5V    : 3A        :                
-PC[27]                       : T7        : output : 2.5 V             :         : 3A        : N              
-Saida_ULA_leitura[8]         : T8        : output : 2.5 V             :         : 3A        : N              
+Saida_ULA_leitura[8]         : T7        : output : 2.5 V             :         : 3A        : N              
+Saida_ULA_leitura[1]         : T8        : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3B        :                
 VCCIO3B                      : T11       : power  :                   : 3.3V    : 3B        :                
 SW[3]                        : T12       : input  : 3.3-V LVTTL       :         : 4A        : Y              
 SW[2]                        : T13       : input  : 3.3-V LVTTL       :         : 4A        : Y              
 HEX5[2]                      : T14       : output : 3.3-V LVTTL       :         : 4A        : Y              
-Saida_ULA_leitura[21]        : T15       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[13]        : T15       : output : 2.5 V             :         : 5A        : N              
 GND                          : T16       : gnd    :                   :         :           :                
-Saida_ULA_leitura[9]         : T17       : output : 2.5 V             :         : 5A        : N              
-PC[3]                        : T18       : output : 2.5 V             :         : 5A        : N              
-PC[21]                       : T19       : output : 2.5 V             :         : 5A        : N              
-Saida_ULA_leitura[1]         : T20       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[20]        : T17       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[18]        : T18       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[29]        : T19       : output : 2.5 V             :         : 5A        : N              
+PC[20]                       : T20       : output : 2.5 V             :         : 5A        : N              
 GND                          : T21       : gnd    :                   :         :           :                
-PC[19]                       : T22       : output : 2.5 V             :         : 5A        : N              
+Saida_ULA_leitura[22]        : T22       : output : 2.5 V             :         : 5A        : N              
 LEDR[7]                      : U1        : output : 3.3-V LVTTL       :         : 2A        : Y              
 LEDR[6]                      : U2        : output : 3.3-V LVTTL       :         : 2A        : Y              
 GND                          : U3        : gnd    :                   :         :           :                
 GND                          : U4        : gnd    :                   :         :           :                
 GND                          : U5        : gnd    :                   :         :           :                
-PC[9]                        : U6        : output : 2.5 V             :         : 3A        : N              
+PC[6]                        : U6        : output : 2.5 V             :         : 3A        : N              
 KEY[0]                       : U7        : input  : 3.3-V LVTTL       :         : 3A        : Y              
-Saida_ULA_leitura[26]        : U8        : output : 2.5 V             :         : 3A        : N              
+Saida_ULA_leitura[24]        : U8        : output : 2.5 V             :         : 3A        : N              
 GND                          : U9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3B        :                
@@ -498,7 +498,7 @@ GND                          : V2        : gnd    :                   :         
 DCLK                         : V3        :        :                   :         : 3A        :                
 GND                          : V4        : gnd    :                   :         :           :                
 TCK                          : V5        : input  :                   :         : 3A        :                
-Saida_ULA_leitura[24]        : V6        : output : 2.5 V             :         : 3A        : N              
+PC[10]                       : V6        : output : 2.5 V             :         : 3A        : N              
 GND                          : V7        : gnd    :                   :         :           :                
 VCCPGM                       : V8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3B        :                
@@ -522,7 +522,7 @@ GND                          : W4        : gnd    :                   :         
 TDI                          : W5        : input  :                   :         : 3A        :                
 VCCPD3A                      : W6        : power  :                   : 2.5V    : 3A        :                
 VCC_AUX                      : W7        : power  :                   : 2.5V    :           :                
-Saida_ULA_leitura[0]         : W8        : output : 2.5 V             :         : 3A        : N              
+PC[1]                        : W8        : output : 2.5 V             :         : 3A        : N              
 KEY[1]                       : W9        : input  : 3.3-V LVTTL       :         : 3A        : Y              
 VCCIO3B                      : W10       : power  :                   : 3.3V    : 3B        :                
 VCCPD3B4A                    : W11       : power  :                   : 3.3V    : 3B, 4A    :                
