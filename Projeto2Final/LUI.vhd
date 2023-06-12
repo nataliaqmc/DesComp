@@ -11,5 +11,5 @@ architecture comportamento of LUI is
   
 			
   begin  -- mux mux mux  oa  hab mux  R  mux  beq bne rd  wr  
-	saida <= entrada & "0000000000000000";
+	saida <= entrada & x"0000";
 end architecture;

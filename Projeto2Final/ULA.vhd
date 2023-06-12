@@ -10,8 +10,9 @@ entity ULA is
     port
     (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-		inverteB,inverteA: std_logic;
-		seletor:  in STD_LOGIC_VECTOR(3 downto 0);
+		inverteB: in std_logic;
+		inverteA: in std_logic;
+		seletor:  in STD_LOGIC_VECTOR(1 downto 0);
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 		flagEQ:   out STD_LOGIC
     );

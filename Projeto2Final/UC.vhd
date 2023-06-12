@@ -16,7 +16,7 @@ architecture comportamento of UC is
   constant SLT   : std_logic_vector(5 downto 0) := 6x"2a";
   
   constant LW    : std_logic_vector(5 downto 0) := 6x"23";
-  constant SW    : std_logic_vector(5 downto 0) := 6x"2b";
+  constant SW    : std_logic_vector(5 downto 0) := "101011";
   constant BEQ   : std_logic_vector(5 downto 0) := 6x"04";
   
   constant J 	  : std_logic_vector(5 downto 0) := 6x"02";

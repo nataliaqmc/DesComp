@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
---entity Projeto2 is
+entity Projeto2 is
   -- Total de bits das entradas e saidas
   generic (larguraDados : natural := 32;
 			  larguraEnderecos : natural := 32;
@@ -139,8 +139,8 @@ ROM : entity work.ROMMIPS   generic map (dataWidth => larguraInstrucao, addrWidt
 MUX_REG_IN : entity work.muxGenerico4x1		generic map	(larguraDados => 5)
 			 port map (entradaA_MUX => Rt,
 						  entradaB_MUX => Rd,
-						  entradaC_MUX => Rd,
-						  entradaD_MUX => Rd,
+						  entradaC_MUX => "11111",
+						  entradaD_MUX => "00000",
 						  seletor_MUX => habMUX_RtRd,
 						  saida_MUX => mux_RtRd_out);
 
@@ -168,7 +168,9 @@ ULA : entity work.ULA  generic map(larguraDados => larguraDados)
 						  inverteA =>ctrlULA(3),
 						  inverteB => ctrlULA(2),
 						  flagEQ => flagULA,
-						  seletor => ctrlULA(3 downto 0));
+						  seletor => ctrlULA(1 downto 0))
+						  ;
+						  
 MUX_FLAG: entity work.muxULA
 			 port map (entradaA_MUX => not flagULA,
 						  entradaB_MUX => flagULA, 
@@ -218,11 +220,13 @@ MUX_BEQ : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 						  entradaB_MUX => saidaSomador,
 						  seletor_MUX => Flag_BEQ,
 						  saida_MUX => mux_ImPC_out);
+						  
 MUX_PC_BEQ_JMP : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => mux_ImPC_out,
 						  entradaB_MUX => enderecoJ, 
 						  seletor_MUX => habMUX_BeqJ, 
 						  saida_MUX => saidaMuxJump);
+
 MUX_JR : entity work.muxGenerico2x1 generic map (larguraDados => 32)
 			 port map (entradaA_MUX => saidaMuxJump,
 						  entradaB_MUX => Rs_out, 
@@ -337,9 +341,8 @@ habEscritaMem <= controle(0);
 
 
 -- Definindo o "OR" do BEQ e BNE:
-BNE_or_BEQ <= BEQ or BNE;
 -- Definindo o "AND" do BEQ:
-Flag_BEQ <= mux_FLAG_out and BNE_or_BEQ;
+Flag_BEQ <= mux_FLAG_out and (BEQ or BNE);
 
 -- Definindo o (PC + 4[31~28],Instr[25~0],0,0):
 enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
