@@ -1,5 +1,5 @@
 Assembler report for Projeto2
-Mon Jun 12 01:38:42 2023
+Mon Jun 12 09:28:18 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jun 12 01:38:42 2023 ;
+; Assembler Status      ; Successful - Mon Jun 12 09:28:18 2023 ;
 ; Revision Name         ; Projeto2                              ;
 ; Top-level Entity Name ; Projeto2                              ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-----------------------+
 ; Option         ; Setting               ;
 +----------------+-----------------------+
-; JTAG usercode  ; 0x009B919A            ;
-; Checksum       ; 0x009B919A            ;
+; JTAG usercode  ; 0x0099BB30            ;
+; Checksum       ; 0x0099BB30            ;
 +----------------+-----------------------+
 
 
@@ -78,13 +78,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 12 01:38:40 2023
+    Info: Processing started: Mon Jun 12 09:28:15 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Projeto2 -c Projeto2
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 506 megabytes
-    Info: Processing ended: Mon Jun 12 01:38:42 2023
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 509 megabytes
+    Info: Processing ended: Mon Jun 12 09:28:18 2023
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

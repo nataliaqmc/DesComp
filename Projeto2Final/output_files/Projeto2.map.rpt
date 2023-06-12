@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Mon Jun 12 01:37:37 2023
+Mon Jun 12 09:27:21 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -107,14 +107,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 12 01:37:37 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 12 09:27:21 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Projeto2                                    ;
 ; Top-level Entity Name           ; Projeto2                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 3105                                        ;
-; Total pins                      ; 131                                         ;
+; Total pins                      ; 99                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -229,7 +229,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -269,25 +269,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 2433                                    ;
+; Estimate of Logic utilization (ALMs needed) ; 2434                                    ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1836                                    ;
+; Combinational ALUT usage for logic          ; 1838                                    ;
 ;     -- 7 input functions                    ; 273                                     ;
-;     -- 6 input functions                    ; 1088                                    ;
-;     -- 5 input functions                    ; 85                                      ;
+;     -- 6 input functions                    ; 1086                                    ;
+;     -- 5 input functions                    ; 89                                      ;
 ;     -- 4 input functions                    ; 121                                     ;
 ;     -- <=3 input functions                  ; 269                                     ;
 ;                                             ;                                         ;
 ; Dedicated logic registers                   ; 3105                                    ;
 ;                                             ;                                         ;
-; I/O pins                                    ; 131                                     ;
+; I/O pins                                    ; 99                                      ;
 ;                                             ;                                         ;
 ; Total DSP Blocks                            ; 0                                       ;
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
 ; Maximum fan-out                             ; 3104                                    ;
-; Total fan-out                               ; 19490                                   ;
-; Average fan-out                             ; 3.75                                    ;
+; Total fan-out                               ; 19431                                   ;
+; Average fan-out                             ; 3.78                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -296,11 +296,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name         ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
-; |Projeto2                              ; 1836 (2)            ; 3105 (0)                  ; 0                 ; 0          ; 131  ; 0            ; |Projeto2                                            ; Projeto2            ; work         ;
-;    |RAMMIPS:RAM|                       ; 799 (799)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:RAM                                ; RAMMIPS             ; work         ;
-;    |ROMMIPS:ROM|                       ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                                ; ROMMIPS             ; work         ;
-;    |UC:UC|                             ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UC:UC                                      ; UC                  ; work         ;
-;    |ULA:ULA|                           ; 121 (8)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                    ; ULA                 ; work         ;
+; |Projeto2                              ; 1838 (2)            ; 3105 (0)                  ; 0                 ; 0          ; 99   ; 0            ; |Projeto2                                            ; Projeto2            ; work         ;
+;    |RAMMIPS:RAM|                       ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|RAMMIPS:RAM                                ; RAMMIPS             ; work         ;
+;    |ROMMIPS:ROM|                       ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ROMMIPS:ROM                                ; ROMMIPS             ; work         ;
+;    |UC:UC|                             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UC:UC                                      ; UC                  ; work         ;
+;    |ULA:ULA|                           ; 122 (8)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA                                    ; ULA                 ; work         ;
 ;       |ULA1bit:bit0|                   ; 5 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0                       ; ULA1bit             ; work         ;
 ;          |somador1bit:somador|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit0|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit10|                  ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit10                      ; ULA1bit             ; work         ;
@@ -379,10 +379,11 @@ https://fpgasoftware.intel.com/eula.
 ;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit8|somador1bit:somador   ; somador1bit         ; work         ;
 ;       |ULA1bit:bit9|                   ; 4 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9                       ; ULA1bit             ; work         ;
 ;          |somador1bit:somador|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULA1bit:bit9|somador1bit:somador   ; somador1bit         ; work         ;
-;       |ULAbit31:bit31|                 ; 4 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                     ; ULAbit31            ; work         ;
+;       |ULAbit31:bit31|                 ; 5 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31                     ; ULAbit31            ; work         ;
+;          |muxULA:muxB|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31|muxULA:muxB         ; muxULA              ; work         ;
 ;          |somador1bit:somador|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|ULA:ULA|ULAbit31:bit31|somador1bit:somador ; somador1bit         ; work         ;
-;    |UnidadeControleULA:UC_ULA|         ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                  ; UnidadeControleULA  ; work         ;
-;    |bancoReg:BANCO_REGISTRADORES|      ; 554 (554)           ; 1024 (1024)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES               ; bancoReg            ; work         ;
+;    |UnidadeControleULA:UC_ULA|         ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|UnidadeControleULA:UC_ULA                  ; UnidadeControleULA  ; work         ;
+;    |bancoReg:BANCO_REGISTRADORES|      ; 558 (558)           ; 1024 (1024)               ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|bancoReg:BANCO_REGISTRADORES               ; bancoReg            ; work         ;
 ;    |conversorHex7Seg:HEX_0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_0                     ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:HEX_1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_1                     ; conversorHex7Seg    ; work         ;
 ;    |conversorHex7Seg:HEX_2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|conversorHex7Seg:HEX_2                     ; conversorHex7Seg    ; work         ;
@@ -394,8 +395,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |muxGenerico2x1:MUX_REG_OUT|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico2x1:MUX_REG_OUT                 ; muxGenerico2x1      ; work         ;
 ;    |muxGenerico4x1:MUX_COMPONENTES|    ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES             ; muxGenerico4x1      ; work         ;
 ;    |muxGenerico4x1:MUX_REG_IN|         ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_REG_IN                  ; muxGenerico4x1      ; work         ;
-;    |muxGenerico4x1:MUX_ULA|            ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_ULA                     ; muxGenerico4x1      ; work         ;
-;    |registradorGenerico:PCounter|      ; 4 (4)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico:PCounter               ; registradorGenerico ; work         ;
+;    |muxGenerico4x1:MUX_ULA|            ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|muxGenerico4x1:MUX_ULA                     ; muxGenerico4x1      ; work         ;
+;    |registradorGenerico:PCounter|      ; 6 (6)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|registradorGenerico:PCounter               ; registradorGenerico ; work         ;
 ;    |somaConstante:incrementaPC|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somaConstante:incrementaPC                 ; somaConstante       ; work         ;
 ;    |somadorGenerico:SOMADOR|           ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Projeto2|somadorGenerico:SOMADOR                    ; somadorGenerico     ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+---------------------+--------------+
@@ -430,24 +431,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[0]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[31]       ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[24]       ;
-; 4:1                ; 23 bits   ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[18]       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[0] ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit10|saida                 ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_ULA|saida_MUX[1]         ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_ULA|saida_MUX[31]        ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[12]                             ;
-; 10:1               ; 3 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[2]                              ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto2|UnidadeControleULA:UC_ULA|saida[2]          ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[10]                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[0]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[31]        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[24]        ;
+; 4:1                ; 23 bits   ; 46 LEs        ; 46 LEs               ; 0 LEs                  ; Yes        ; |Projeto2|registradorGenerico:PCounter|DOUT[18]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_COMPONENTES|saida_MUX[26] ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |Projeto2|ULA:ULA|ULA1bit:bit18|saida                  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_ULA|saida_MUX[15]         ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Projeto2|muxGenerico4x1:MUX_ULA|saida_MUX[25]         ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[4]                               ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Projeto2|UnidadeControleULA:UC_ULA|saida[1]           ;
+; 12:1               ; 3 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |Projeto2|UC:UC|saida[13]                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -1058,25 +1058,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 3105                        ;
 ;     ENA               ; 3074                        ;
 ;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 1837                        ;
+; arriav_lcell_comb     ; 1839                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 29                          ;
 ;     extend            ; 273                         ;
 ;         7 data inputs ; 273                         ;
-;     normal            ; 1504                        ;
+;     normal            ; 1506                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 14                          ;
-;         2 data inputs ; 164                         ;
-;         3 data inputs ; 60                          ;
+;         2 data inputs ; 167                         ;
+;         3 data inputs ; 57                          ;
 ;         4 data inputs ; 92                          ;
-;         5 data inputs ; 85                          ;
-;         6 data inputs ; 1088                        ;
-; boundary_port         ; 131                         ;
+;         5 data inputs ; 89                          ;
+;         6 data inputs ; 1086                        ;
+; boundary_port         ; 99                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.00                       ;
-; Average LUT depth     ; 9.14                        ;
+; Average LUT depth     ; 9.12                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1095,7 +1095,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Jun 12 01:37:28 2023
+    Info: Processing started: Mon Jun 12 09:27:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file registradorBooleano.vhd
@@ -1145,7 +1145,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file RAMMIPS
     Info (12022): Found design unit 1: RAMMIPS-assincrona File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/RAMMIPS.vhd Line: 18
     Info (12023): Found entity 1: RAMMIPS File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/RAMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file Projeto2.vhd
-    Info (12022): Found design unit 1: Projeto2-arquitetura File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 33
+    Info (12022): Found design unit 1: Projeto2-arquitetura File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 34
     Info (12023): Found entity 1: Projeto2 File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file logicaLEDS.vhd
     Info (12022): Found design unit 1: logicLEDS-comportamento File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/logicaLEDS.vhd Line: 14
@@ -1181,37 +1181,37 @@ Info (12021): Found 2 design units, including 1 entities, in source file LUI.vhd
     Info (12022): Found design unit 1: LUI-comportamento File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/LUI.vhd Line: 10
     Info (12023): Found entity 1: LUI File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/LUI.vhd Line: 4
 Info (12127): Elaborating entity "Projeto2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Projeto2.vhd(99): object "hab_ORI_ANDI" assigned a value but never read File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 99
+Warning (10036): Verilog HDL or VHDL warning at Projeto2.vhd(100): object "hab_ORI_ANDI" assigned a value but never read File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 100
 Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at Projeto2.vhd(16) File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 16
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 112
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PCounter" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 121
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 129
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 134
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 115
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PCounter" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 124
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 132
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 137
 Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_REG_IN" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 139
-Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BANCO_REGISTRADORES" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 147
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_OUT" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 157
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 164
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_REG_IN" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 142
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:BANCO_REGISTRADORES" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 150
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_REG_OUT" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 160
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 167
 Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA:ULA|ULA1bit:bit0" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULA.vhd Line: 70
 Info (12128): Elaborating entity "muxULA" for hierarchy "ULA:ULA|ULA1bit:bit0|muxULA:muxA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULA1bit.vhd Line: 27
 Info (12128): Elaborating entity "somador1bit" for hierarchy "ULA:ULA|ULA1bit:bit0|somador1bit:somador" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULA1bit.vhd Line: 39
 Info (12128): Elaborating entity "ULAbit31" for hierarchy "ULA:ULA|ULAbit31:bit31" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULA.vhd Line: 132
 Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(25): object "muxAout" assigned a value but never read File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULAbit31.vhd Line: 25
 Warning (10036): Verilog HDL or VHDL warning at ULAbit31.vhd(27): object "somadorOut" assigned a value but never read File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/ULAbit31.vhd Line: 27
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 180
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 191
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:EXTENSOR_SINAL" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 201
-Info (12128): Elaborating entity "LUI" for hierarchy "LUI:LUI_OP" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 204
-Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 208
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 213
-Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER_PC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 235
-Info (12128): Elaborating entity "UC" for hierarchy "UC:UC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 241
-Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 246
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "muxGenerico4x1:MUX_ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 183
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 194
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:EXTENSOR_SINAL" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 204
+Info (12128): Elaborating entity "LUI" for hierarchy "LUI:LUI_OP" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 208
+Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 212
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:SOMADOR" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 217
+Info (12128): Elaborating entity "deslocadorGenerico" for hierarchy "deslocadorGenerico:SHIFTER_PC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 239
+Info (12128): Elaborating entity "UC" for hierarchy "UC:UC" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 245
+Info (12128): Elaborating entity "UnidadeControleULA" for hierarchy "UnidadeControleULA:UC_ULA" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 250
 Info (10041): Inferred latch for "saida[0]" at UnidadeControleULA.vhd(33) File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/UnidadeControleULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[1]" at UnidadeControleULA.vhd(33) File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/UnidadeControleULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[2]" at UnidadeControleULA.vhd(33) File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/UnidadeControleULA.vhd Line: 33
 Info (10041): Inferred latch for "saida[3]" at UnidadeControleULA.vhd(33) File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/UnidadeControleULA.vhd Line: 33
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 267
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:HEX_0" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 271
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/RAMMIPS.vhd Line: 21
     Info (276007): RAM logic "bancoReg:BANCO_REGISTRADORES|registrador" is uninferred due to asynchronous read logic File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/bancoReg.vhd Line: 49
@@ -1271,13 +1271,13 @@ Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 15
     Warning (15610): No output dependent on input pin "SW[9]" File: /home/will/SextoSemestre/DesComp-Atividade/nat/DesComp/Projeto2Final/Projeto2.vhd Line: 15
-Info (21057): Implemented 5026 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4996 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 116 output pins
-    Info (21061): Implemented 4895 logic cells
+    Info (21059): Implemented 84 output pins
+    Info (21061): Implemented 4897 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 497 megabytes
-    Info: Processing ended: Mon Jun 12 01:37:37 2023
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Mon Jun 12 09:27:21 2023
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:16
 

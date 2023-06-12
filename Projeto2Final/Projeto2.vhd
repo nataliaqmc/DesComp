@@ -19,9 +19,10 @@ entity Projeto2 is
 	 HEX2 : out std_logic_vector(6 downto 0);
 	 HEX3 : out std_logic_vector(6 downto 0);
 	 HEX4 : out std_logic_vector(6 downto 0);
-	 HEX5 : out std_logic_vector(6 downto 0);
+	 HEX5 : out std_logic_vector(6 downto 0)
 
-	 Saida_ULA_leitura	 : out std_logic_vector (larguraDados-1 downto 0)
+	 
+	 
 	 --TESTE
 	 --entradaAmm: out std_logic_vector(31 downto 0);
 	 --entradaBmm: out std_logic_vector(31 downto 0)
@@ -101,6 +102,8 @@ architecture arquitetura of Projeto2 is
 	signal BNE_or_BEQ   : std_logic;
 	
 	signal LEDS: std_logic_vector(9  downto 0);
+	
+	
 begin
 
 -- Instanciando os componentes:
@@ -201,6 +204,7 @@ RAM : entity work.RAMMIPS generic map(dataWidth => 32, addrWidth => 32, memoryAd
 EXTENSOR_SINAL : entity work.estendeSinalGenerico generic map(larguraDadoEntrada => 16, larguraDadoSaida => 32)
 			 port map (estendeSinal_IN => imediato,
 						  estendeSinal_OUT => saidaExtensor);
+						  
 LUI_OP: entity work.LUI
 			 port map (entrada => imediato,
 						  saida => lui_out); 
@@ -348,8 +352,6 @@ Flag_BEQ <= mux_FLAG_out and (BEQ or BNE);
 enderecoJ <= saidaIncrementaPC(31 downto 28) & destinoShift & "00";
 EnderecoROM <= PC_OUT;				
 PC <= EnderecoROM;
-
-Saida_ULA_leitura	<=Saida_ULA;
 
 
 
